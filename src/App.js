@@ -2,19 +2,21 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Nav from "./components/nav/Nav";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Experience from "./components/Experience/Experience";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    <Header />
-                    <Nav />
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
+                <Header />
+                <About />
+                <Experience />
+                <Contact />
+                <Footer />
+                <Nav />
             </header>
         </div>
     );

@@ -1,0 +1,61 @@
+section #about {
+    width: 100%;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 8rem;
+}
+
+.service-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 1rem 0 1rem;
+}
+
+.service-websites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 1rem 0 1rem;
+
+}
+
+.service-eshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 1rem 0 1rem;
+
+}
+
+.text-app {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.text-websites {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+.text-eshop {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+
+}
+

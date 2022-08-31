@@ -1,0 +1,136 @@
+.typewriter {
+  color: #fff;
+  width: max-content;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto 20px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+button {
+  background-color: transparent;
+
+  padding:13px 18px;
+  margin: 10px 25px 0 0;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+
+}
+#header a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.border-gradient {
+  border: 2.5px solid;
+  border-image-slice: 1;
+  /* border-width:2px; */
+  clip-path: polygon(0 0, 12px 0, 12px 3px, 24px 3px, 24px 0, 100% 0, 100% 100%, 0 100%);
+}
+.border-gradient-card {
+  border-image-source: var(--color-gradient);
+}
+
+.filled {
+  background-image: var(--color-gradient);
+  border: 2.5px transparent;
+  /* padding-left: 2.5px;
+  padding-right: 2.5px; */
+  color: white;
+}
+
+.logo {
+  width: 22rem;
+  /* transform: translateX(-5%); */
+  margin: 1.5rem 0 5px 0;
+  padding: 0;
+}
+
+.project-demo {
+  height: 13rem !important;
+  width: 20rem !important;
+  background-image: var(--color-gradient);
+  /* justify-items: center; */
+  border-radius: 1rem;
+  margin: 5rem auto 5rem auto;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
+  font-size: 19px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  line-height: 22rem;
+  /* justify-content: center; */
+  /* transform: translateX(40%); */
+}
+
+.project-demo img {
+  height: 100%;
+  right:6rem;
+  z-index:3;
+  transition: transform 0.3s;
+  position: absolute;
+  left: -1rem;
+  top: -0.04rem;
+}
+
+.open {
+  transform: translateY(-25%);
+}
+
+.close {
+  transform: translateY(0%);
+}
+
+/* @keyframes slide-up {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+
+.project-demo img:not(:hover){
+  animation: slide-down .3s steps(40, end) forwards;
+}
+
+@keyframes slide-down {
+  from { translateY(cu)}
+  to {
+    transform: translateY(0%);
+  }
+} */
+
+.project-demo #desc {
+  z-index:2;
+  font-size: 19px;
+  width: 100%;
+  text-align: center;
+  align-content: flex-end;
+  margin-top: 10rem;
+  position: absolute;
+  bottom: 10px;
+  transform: translateY(-10%);
+}
