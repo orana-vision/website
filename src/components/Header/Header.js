@@ -19,12 +19,14 @@ const Header = () => {
         <section id="header">
             <img src={LOGO} alt="logo" className="logo" />
             <h1 className="typewriter">the New Vision.</h1>
-            <button className="border-gradient border-gradient-card">
-                <a href="#experience">See Projects</a>
-            </button>
-            <button className="filled">
-                <a href="#contact">Let's talk</a>
-            </button>
+            <div>
+                <button className="border-gradient border-gradient-card">
+                    <a href="#experience">See Projects</a>
+                </button>
+                <button className="filled">
+                    <a href="#contact">Let's talk</a>
+                </button>
+            </div>
             <a href="#experience">
                 <div className="project-demo" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                     {/* <div id="desc">{data.headerDemo.name}</div> */}

@@ -59,3 +59,17 @@ section #about {
 
 }
 
+.icons {
+    transition: .7s transform ease-in;
+}
+
+.flip-in {
+    transform: rotateY(180deg);
+    /* transform: scale(1.3); */
+}
+
+/* .flip-out {
+    transform: rotateY(-180deg);
+
+} */
+

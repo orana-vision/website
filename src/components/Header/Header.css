@@ -28,7 +28,7 @@ button {
   background-color: transparent;
 
   padding:13px 18px;
-  margin: 10px 25px 0 0;
+  margin: 10px 25px 0 25px;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
@@ -56,13 +56,14 @@ button {
   border: 2.5px transparent;
   /* padding-left: 2.5px;
   padding-right: 2.5px; */
+  width: 10.5rem;
   color: white;
 }
 
 .logo {
   width: 22rem;
   /* transform: translateX(-5%); */
-  margin: 1.5rem 0 5px 0;
+  margin: 1rem 0 5px 0;
   padding: 0;
 }
 
@@ -72,7 +73,7 @@ button {
   background-image: var(--color-gradient);
   /* justify-items: center; */
   border-radius: 1rem;
-  margin: 5rem auto 5rem auto;
+  margin: 2rem auto 5rem auto;
   padding-top: 1rem;
   position: relative;
   z-index: 1;
