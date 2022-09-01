@@ -8,7 +8,7 @@ section #about {
     justify-content: space-between;
     width: 100%;
     font-size: 3rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .service-app {
@@ -68,8 +68,11 @@ section #about {
     /* transform: scale(1.3); */
 }
 
-/* .flip-out {
+.flip-out {
     transform: rotateY(-180deg);
 
-} */
+}
 
+button {
+    box-shadow: 0;
+}

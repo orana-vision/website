@@ -1,5 +1,5 @@
 .typewriter {
-  color: #fff;
+  color: #000;
   width: max-content;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -26,7 +26,7 @@
 
 button {
   background-color: transparent;
-
+  color: #000;
   padding:13px 18px;
   margin: 10px 25px 0 25px;
   cursor: pointer;
@@ -36,7 +36,7 @@ button {
 }
 #header a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 15px;
   padding: 20px;
 }
@@ -82,6 +82,7 @@ button {
   text-align: center;
   overflow: hidden;
   line-height: 22rem;
+  box-shadow: 10px 11px 43px -15px rgba(0,0,0,0.75);
   /* justify-content: center; */
   /* transform: translateX(40%); */
 }
