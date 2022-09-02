@@ -1,5 +1,10 @@
-section #about {
+#about {
     width: 100%;
+    background-color: #e8e4e4 !important;
+}
+.container {
+    background-color: #e8e4e4 !important;
+
 }
 
 .services-container {
@@ -9,42 +14,25 @@ section #about {
     width: 100%;
     font-size: 3rem;
     margin-top: 4rem;
+    height: 10rem;
 }
 
-.service-app {
+.service {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-radius: 1rem;
     margin: 0 1rem 0 1rem;
+    box-shadow:  12px 12px 24px #bebebe,
+    -12px -12px 24px #ffffff;
 }
 
-.service-websites {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    margin: 0 1rem 0 1rem;
-
-}
-
-.service-eshop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    margin: 0 1rem 0 1rem;
-
-}
-
-.text-app {
+.text {
     font-size: 1rem;
     margin-top: 1.5rem;
+    color: black;
 }
 
 .text-websites {
