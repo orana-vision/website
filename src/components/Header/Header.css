@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&family=Oxygen:wght@300;400&display=swap');
+
 .typewriter {
   color: rgb(255, 255, 255);
   width: max-content;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
-  font-size: 80px !important;
+  font-size: 60px !important;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto 20px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -31,15 +33,20 @@ button {
   padding:13px 18px;
   margin: 10px 25px 0 25px;
   cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 
 }
-a {
+
+
+#header a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-size: 15px;
   padding: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header{
+  overflow: hidden;
 }
 
 .border-gradient {
@@ -52,19 +59,41 @@ a {
   border-image-source: var(--color-gradient);
 }
 
-.filled {
-  background-image: var(--color-gradient);
+.neomorphism {
+  /* background-image: var(--color-gradient); */
+  background-color: var(--color-bg-light);
   border: 2.5px transparent;
-  /* padding-left: 2.5px;
-  padding-right: 2.5px; */
+  border-radius: 4rem;
   width: 10.5rem;
-  color: white;
+  height: 4rem;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  12px 12px 24px #bebebe,
+              -12px -12px 24px #ffffff;
+  transition: 0.3s;
+}
+
+.neomorphism:hover {
+  box-shadow:  5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  border: 2.5px #bebebe;
+}
+
+.neomorphism a {
+  color: black;
+}
+
+.filled a {
+  color: rgb(255, 255, 255);
+}
+
+.filled {
+    background-image: var(--color-gradient);
 }
 
 .logo {
-  width:90%;
+  width:80%;
   /* transform: translateX(-5%); */
-  margin: 15rem 0 1rem -7rem;
+  margin: 0;
   padding: 0;
 }
 
@@ -106,17 +135,42 @@ a {
   transform: translateY(0%);
 }
 .row{
-    display: flex;
+  display: flex;
   flex-direction: row;
-  
+  margin-top: 7rem;
 }
 
 .info{
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-left: 7rem;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem 2rem 0;
+}
+
+.bottom-container {
+  width: 100%;
+   transform: translateY(-4rem); 
+  
+  position: relative;
+  bottom: -5rem;  
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(465%);
+  z-index: 1;
+  position: relative;
+}
 /* @keyframes slide-up {
   from {
     transform: translateY(0%);
@@ -147,4 +201,11 @@ a {
   position: absolute;
   bottom: 10px;
   transform: translateY(-10%);
+}
+
+.waves{
+  margin-top: -1rem;
+  height: 100%;
+  background-color: 	'rgb(232, 228, 228)' !important;
+  color: #e8e4e4 !important;
 }

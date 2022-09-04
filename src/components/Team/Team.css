@@ -1,0 +1,5 @@
+.container{
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+}

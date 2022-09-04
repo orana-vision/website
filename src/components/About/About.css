@@ -1,6 +1,12 @@
-section #about {
+#about {
     width: 100%;
+    background-color: #e8e4e4 !important;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    
 }
+
 
 .services-container {
     display: flex;
@@ -9,42 +15,28 @@ section #about {
     width: 100%;
     font-size: 3rem;
     margin-top: 4rem;
+    flex: 2;
 }
 
-.service-app {
+.service {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
+    padding: 2rem;
+    height: 25rem;
+    border-radius: 1rem;
     margin: 0 1rem 0 1rem;
+    box-shadow:  12px 12px 24px #bebebe,
+    -12px -12px 24px #ffffff;
 }
 
-.service-websites {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    margin: 0 1rem 0 1rem;
-
-}
-
-.service-eshop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    margin: 0 1rem 0 1rem;
-
-}
-
-.text-app {
+.text {
     font-size: 1rem;
     margin-top: 1.5rem;
+    color: black;
+    margin-top:3rem
 }
 
 .text-websites {
@@ -75,4 +67,55 @@ section #about {
 
 button {
     box-shadow: 0;
+}
+
+
+.svg-icon {
+    width: 20rem;
+    
+}
+
+.mobile-svg {
+    width: 15rem;
+}
+
+.about-header {
+    text-shadow: #000 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: var(--color-bg-light);
+
+}
+
+.meet-team-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.team-member {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    transform: scale(2) translateY(20%);
+    filter: grayscale(100%);    
+    transition: 0.5s;
+}
+
+.team-member span {
+}
+
+.team-member img:hover {
+    filter: grayscale(0);    
 }
