@@ -1,0 +1,77 @@
+.myName{
+  color:black;
+  font-size: 6rem;
+  font-family: "Caviar Dreams", monospace;
+  font-weight: bold;
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+
+.myName:hover{
+  transform: scale(1.005);
+}
+
+.nameContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+
+.profileImage{
+  border-radius: 20%;
+}
+#header{
+  width: 100%;
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:  stretch;
+  justify-items: center;
+}
+
+.subtitle{
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  animation-duration: 1s !important;
+  animation-name: slidein;
+}
+
+.img-hover-zoom {
+  height: 500px;
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom--quick-zoom img {
+  transform-origin: 50% 50%;
+  transition: transform 0.5s, visibility 0.5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover img {
+  transform: scale(1.02);
+}
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  
+    85% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
