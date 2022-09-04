@@ -28,18 +28,20 @@
   line-height: 116px;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #000;
   text-align: center;
-  opacity: 0.2;
+  opacity: 0.4;
+  text-shadow: #fff 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .carousel__cell:nth-child(9n+1) { background: transparent; }
 .carousel__cell:nth-child(9n+2) { background: transparent; }
 .carousel__cell:nth-child(9n+3) { background: transparent; }
 
-.carousel__cell:nth-child(1) { transform: rotateX(0deg) translateZ(102px); transition: 1s opacity;}
-.carousel__cell:nth-child(2) { transform: rotateX(120deg) translateZ(102px);  transition: 1s opacity;}
-.carousel__cell:nth-child(3) { transform: rotateX(240deg) translateZ(102px);  transition: 1s opacity;}
+.carousel__cell:nth-child(1) { transform: rotateX(0deg) translateZ(102px); transition: 2s;}
+.carousel__cell:nth-child(2) { transform: rotateX(120deg) translateZ(102px);  transition: 2s;}
+.carousel__cell:nth-child(3) { transform: rotateX(240deg) translateZ(102px);  transition: 2s;}
 
 
 p {
@@ -48,4 +50,5 @@ p {
 
 .cell_selected {
   opacity: 1;
+  color: #fff
 }

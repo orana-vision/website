@@ -30,6 +30,7 @@ section {
 
 :root {
     --color-bg: #0F0F0F;
+    --color-bg-light: #e8e4e4;
     --color-gradient: linear-gradient(90deg, #c6579b 0%, rgba(218,42,64,1) 99%);;
     --color-button: #000000;
     --color-nav: rgba(0,0,0, 0.4);
