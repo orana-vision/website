@@ -6,7 +6,10 @@ import websiteSvg from "../../assets/undraw_add_color_re_buro.svg";
 import mobileSvg from "../../assets/undraw_mobile_analytics_72sr.svg";
 import eshopSvg from "../../assets/undraw_online_test_re_kyfx.svg";
 import HORGOS from "../../assets/horgos.jpg";
+import GKOUNTRAS from "../../assets/me.jpg";
+import cursorSvg from "../../assets/cursor.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function a11yProps(index) {
     return {
@@ -19,8 +22,17 @@ const About = () => {
     const [hover, setHover] = useState({ phoneHover: false, webHover: false, eshopHover: false });
     const [value, setValue] = React.useState(0);
 
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [animateMember, setAnimateMember] = useState("default");
+    console.log(mousePosition);
+
+    const [eshopPos, setEshopPos] = useState({ top: 0, left: 0 });
     const handleChange = (event, newValue) => {
         setValue(newValue);
+    };
+
+    const mouseMove = (e) => {
+        setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleInHover = (icon) => {
@@ -51,6 +63,23 @@ const About = () => {
         }
     };
 
+    const eshopMouseMove = (e) => {
+        setEshopPos({ ...eshopPos, top: e.screenY, left: e.screenX });
+    };
+
+    const variants = {
+        default: {
+            x: mousePosition.x - 150,
+            y: mousePosition.y - 150,
+            opacity: 0,
+        },
+        hover: {
+            x: mousePosition.x - 150,
+            y: mousePosition.y - 150,
+            opacity: 1,
+        },
+    };
+
     return (
         <section className="container" id="about">
             About
@@ -59,33 +88,71 @@ const About = () => {
                     className="service"
                     onMouseEnter={() => handleInHover("phone")}
                     onMouseLeave={() => handleOutHover("phone")}>
-                    <div className={hover.phoneHover ? "icons flip-in" : "icons"}>
+                    {/* <div className={hover.phoneHover ? "icons flip-in" : "icons"}>
                         <BsPhone style={{ color: "#06A77D" }} className="img-phone" />
-                    </div>
+                    </div> */}
+                    <img className="mobile-svg" src={mobileSvg} alt="horgos" />
                     <div className="text">We develop custom mobile apps that can help your bussiness.</div>
                 </div>
                 <div
                     className="service"
                     onMouseEnter={() => handleInHover("web")}
                     onMouseLeave={() => handleOutHover("web")}>
-                    <div className={hover.webHover ? "icons flip-in" : "icons"}>
+                    {/* <div className={hover.webHover ? "icons flip-in" : "icons"}>
                         <BsGlobe2 style={{ color: "#9395D3" }} />
-                    </div>
+                    </div> */}
+                    <img className="svg-icon" src={websiteSvg} alt="horgos" />
                     <div className="text">We develop custom mobile apps that can help your bussiness.</div>
                 </div>
                 <div
                     className="service"
                     onMouseEnter={() => handleInHover("eshop")}
                     onMouseLeave={() => handleOutHover("eshop")}>
-                    <div className={hover.eshopHover ? "icons flip-in" : "icons"}>
+                    {/* <div className={hover.eshopHover ? "icons flip-in" : "icons"}>
                         <AiOutlineShopping style={{ color: "#F1A208" }} />
-                    </div>
+                    </div> */}
+                    <img
+                        onMouseMove={eshopMouseMove}
+                        className="svg-icon"
+                        style={{ ...eshopPos }}
+                        src={eshopSvg}
+                        alt="horgos"
+                    />
                     <div className="text">We develop custom mobile apps that can help your bussiness.</div>
                 </div>
             </div>
-            <button className="neomorphism">
+            <div>Meet Orana Team</div>
+            <div
+                onMouseMove={mouseMove}
+                onMouseEnter={() => setAnimateMember("hover")}
+                onMouseLeave={() => setAnimateMember("default")}
+                className="meet-team-container">
+                <motion.img
+                    src={cursorSvg}
+                    alt="cursor"
+                    className="cursor"
+                    variants={variants}
+                    animate={animateMember}
+                />
+                <div className="team-member">
+                    <Link to="/team">
+                        <img src={HORGOS} alt="horgos" />
+                    </Link>
+                </div>
+                <div className="team-member">
+                    <Link to="/team">
+                        <img src={GKOUNTRAS} alt="gkountras" />
+                    </Link>
+                </div>
+                <div className="team-member">
+                    <Link to="/team">
+                        <img src={HORGOS} alt="horgos" />
+                    </Link>
+                </div>
+            </div>
+            {/* <button className="neomorphism">
                 <Link to="/team">TEAM</Link>
-            </button>
+            </button> */}
         </section>
     );
 };

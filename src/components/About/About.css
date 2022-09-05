@@ -97,6 +97,7 @@ button {
     justify-content: center;
     align-items: center;
     flex: 2;
+    /* position: relative; */
 }
 
 .team-member {
@@ -104,13 +105,19 @@ button {
     height: 100%;
     background-color: aquamarine;
     overflow: hidden;
+    
+    /* position: absolute; */
 }
 
 .team-member img {
+    cursor: none;
     width: 100%;
-    transform: scale(2) translateY(20%);
+    height: 100%;
+    /* transform: scale(2); */
     filter: grayscale(100%);    
-    transition: 0.5s;
+    transition: 0.5s ease;
+    top: 0;
+    object-fit:cover;
 }
 
 .team-member span {
@@ -118,4 +125,14 @@ button {
 
 .team-member img:hover {
     filter: grayscale(0);    
+}
+
+.cursor {
+    background: url(../../assets/cursor.svg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 300px;
+    /* height: 6rem; */
 }
