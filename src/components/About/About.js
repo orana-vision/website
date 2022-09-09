@@ -11,12 +11,7 @@ import cursorSvg from "../../assets/cursor.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-function a11yProps(index) {
-    return {
-        id: `vertical-tab-${index}`,
-        "aria-controls": `vertical-tabpanel-${index}`,
-    };
-}
+import Members from "./Members";
 
 const About = () => {
     const [hover, setHover] = useState({ phoneHover: false, webHover: false, eshopHover: false });
@@ -74,15 +69,16 @@ const About = () => {
             opacity: 0,
         },
         hover: {
-            x: mousePosition.x - 150,
-            y: mousePosition.y - 150,
+            x: mousePosition.x - "25%",
+            y: mousePosition.y - "25%",
+            // filter: "brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5)",
             opacity: 1,
         },
     };
 
     return (
         <section className="container" id="about">
-            About
+            <div className="about-text">About</div>
             <div className="services-container">
                 <div
                     className="service"
@@ -122,37 +118,9 @@ const About = () => {
                 </div>
             </div>
             <div>Meet Orana Team</div>
-            <div
-                onMouseMove={mouseMove}
-                onMouseEnter={() => setAnimateMember("hover")}
-                onMouseLeave={() => setAnimateMember("default")}
-                className="meet-team-container">
-                <motion.img
-                    src={cursorSvg}
-                    alt="cursor"
-                    className="cursor"
-                    variants={variants}
-                    animate={animateMember}
-                />
-                <div className="team-member">
-                    <Link to="/team">
-                        <img src={HORGOS} alt="horgos" />
-                    </Link>
-                </div>
-                <div className="team-member">
-                    <Link to="/team">
-                        <img src={GKOUNTRAS} alt="gkountras" />
-                    </Link>
-                </div>
-                <div className="team-member">
-                    <Link to="/team">
-                        <img src={HORGOS} alt="horgos" />
-                    </Link>
-                </div>
+            <div className="members-container">
+                <Members />
             </div>
-            {/* <button className="neomorphism">
-                <Link to="/team">TEAM</Link>
-            </button> */}
         </section>
     );
 };

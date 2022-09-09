@@ -5,6 +5,7 @@ const VerticalCarousel = () => {
     const [angle, setAngle] = useState(0);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedOpacity, setSelectedOpacity] = useState(1);
+    let isFirstTime = true;
 
     let cellCount = 3;
     let cellSize = 120;
@@ -12,15 +13,44 @@ const VerticalCarousel = () => {
     let radius = Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount));
 
     useEffect(() => {
-        setAngle(theta * selectedIndex * -1);
-        console.log(selectedOpacity);
-    }, [selectedIndex]);
+        setTimeout(() => {
+            setSelectedIndex(selectedIndex + 1);
+            setAngle(theta * selectedIndex * -1);
+            // console.log(selectedOpacity);
+        }, 1500);
+    }, [angle]);
+
+    useEffect(() => {
+        // console.log("opacity " + selectedOpacity);
+        setSelectedOpacity((prev) => {
+            switch (prev) {
+                case 3:
+                    return 1;
+                default:
+                    return prev + 1;
+            }
+        });
+    }, [angle]);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setSelectedIndex(selectedIndex + 1);
+    //         setSelectedOpacity((prev) => {
+    //             switch (prev) {
+    //                 case 3:
+    //                     return 1;
+    //                 default:
+    //                     return prev + 1;
+    //             }
+    //         });
+    //     }, 2000);
+    // }, [selectedOpacity]);
 
     return (
         <>
             <div className="scene">
                 <div
-                    onMouseEnter={() => {
+                    onScrollCapture={() => {
                         setSelectedIndex(selectedIndex + 1);
                         setSelectedOpacity((prev) => {
                             switch (prev) {

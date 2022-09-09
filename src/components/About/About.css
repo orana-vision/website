@@ -4,7 +4,22 @@
     height: 200vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     
+}
+
+.about-text {
+    font-weight:bold;
+    font-size: 90px;
+    color: #e8e4e4;
+    text-shadow: -1px -1px 0 var(--color-bg), 1px -1px 0 var(--color-bg), -1px 1px 0 var(--color-bg), 1px 1px 0 var(--color-bg);
+    transition: 0.8s color;
+    width: fit-content;
+}
+
+.about-text:hover {
+    color: var(--color-bg)
 }
 
 
@@ -90,42 +105,70 @@ button {
 }
 
 .meet-team-container {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    height: 100%;
+    /* justify-content: center;
     align-items: center;
-    flex: 2;
+    flex: 2; */
+    /* overflow: hidden; */
     /* position: relative; */
 }
 
 .team-member {
-    width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-    overflow: hidden;
-    
+
+    /* background-color: aquamarine; */
+    /* overflow: hidden; */
+    /* perspective: 700px; */
     /* position: absolute; */
-}
-
-.team-member img {
-    cursor: none;
+    /* object-fit:cover; */
+    /* position: relative; */
+    /* background-size: cover; */
+    /* background-size: cover;
+    background-position: center; */
     width: 100%;
     height: 100%;
-    /* transform: scale(2); */
-    filter: grayscale(100%);    
-    transition: 0.5s ease;
-    top: 0;
-    object-fit:cover;
+    /* transition: transform 2s cubic-bezier(0.77, 0, 0.175, 1), */
+    /* clip-path: 0.2s linear;*/
+    position: absolute;
+    
+}
+.gray {
+    /* cursor: none; */
+    /* width: 100%;*/
+    height: 100%;
+    /* transform: rotateY(45deg); */
+    /* filter: grayscale(100%);  */
+    filter: grayscale(100%) sepia(20%) brightness(80%);
+    background-image: url(../../assets/horgos.jpg);  
+    /* transition: 0.5s ease;
+    top: 0; */
+}
+.masked {
+    height: 100%;
+
+    /* cursor: none; */
+    /* width: 100%;
+    height: 100%;
+    /* transform: rotateY(45deg); */
+    /* filter: grayscale(100%);     */
+    /* transition: 0.5s ease; */
+    /* top: 0;
+    object-fit:cover; */ 
+    background-image: url(../../assets/horgos.jpg);  
+    clip-path: circle(25% at 50% 50%);
+
 }
 
-.team-member span {
-}
 
-.team-member img:hover {
+/* .team-member img:hover {
     filter: grayscale(0);    
-}
+} */
 
 .cursor {
     background: url(../../assets/cursor.svg);
@@ -135,4 +178,8 @@ button {
     z-index: 5;
     width: 300px;
     /* height: 6rem; */
+}
+
+.members-container {
+    width: 100%;
 }
