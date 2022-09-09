@@ -23,6 +23,17 @@
 }
 .gallery-item {
     clip-path: inset(0% 0% 0% 0%);
+    opacity: 1;
+}
+
+
+.gallery-animate-end {
+    opacity: 1;
+}
+
+.gallery-animate-start {
+    opacity: 0;
+    transition: 4s opacity ease-out;
 }
 
 .gallery-item-image {

@@ -18,7 +18,7 @@ const Header = () => {
     };
     return (
         <section id="header">
-            <div classNfame="row">
+            <div className="row">
                 <div className="logo-container">
                     <img src={LOGO} alt="logo" className="logo" />
                     <h1 className="typewriter">the New Vision.</h1>

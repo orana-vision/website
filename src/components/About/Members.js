@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState, useMemo } from "react";
 import "./Members.css";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,9 @@ import { CursorContext } from "./CursorManager";
 const MembersItem = () => {
     const ref = useRef(null);
     const mouseContext = useContext(CursorContext);
+
+    const isInViewPort = useIsInViewport(ref);
+    console.log(isInViewPort);
 
     const [clipMaskRadius, setClipMaskRadius] = useState(0);
     const [clipMask, setClipMask] = useState({ x: 0, y: 0 });
@@ -54,7 +57,7 @@ const MembersItem = () => {
                 setClipMaskRadius(0);
                 mouseContext.setSize("small");
             }}>
-            <div className="gallery-item">
+            <div className={!isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"}>
                 <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
                 <div
                     className="gallery-item-image masked"
@@ -78,5 +81,21 @@ const Members = () => {
         </div>
     );
 };
+
+function useIsInViewport(ref) {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+
+    const observer = useMemo(() => new IntersectionObserver(([entry]) => setIsIntersecting(entry.isIntersecting)), []);
+
+    useEffect(() => {
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [ref, observer]);
+
+    return isIntersecting;
+}
 
 export default Members;
