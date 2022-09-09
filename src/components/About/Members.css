@@ -32,7 +32,7 @@
 }
 
 .gallery-animate-start {
-    opacity: 0;
+    opacity: 0.1;
     transition: 4s opacity ease-out;
 }
 
