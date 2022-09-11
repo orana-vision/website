@@ -11,11 +11,15 @@ import cursorSvg from "../../assets/cursor.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
+
 import Members from "./Members";
 
+
 const About = () => {
-    const [hover, setHover] = useState({ phoneHover: false, webHover: false, eshopHover: false });
-    const [value, setValue] = React.useState(0);
+  const [hover, setHover] = useState({ phoneHover: false, webHover: false, eshopHover: false });
+  const [value, setValue] = React.useState(0);
+
 
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [animateMember, setAnimateMember] = useState("default");
