@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="bottom-container">
-                <div className="buttons-container">
+                <div className="child buttons-container">
                     <button className="neomorphism filled">
                         <a href="#experience">See Projects</a>
                     </button>
@@ -37,7 +37,7 @@ const Header = () => {
                         <a href="#contact">Let's talk</a>
                     </button>
                 </div>
-                <div className="waves">
+                <div className="child waves">
                     <Waves />
                 </div>
             </div>
