@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import src from "../../assets/horgos.jpg";
 import { CursorContext } from "./CursorManager";
+import { Link } from "react-router-dom";
 
 const MembersItem = () => {
     const ref = useRef(null);
@@ -56,15 +57,20 @@ const MembersItem = () => {
                 setClipMaskRadius(0);
                 mouseContext.setSize("small");
             }}>
-            <div className={!isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"}>
-                <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
+            <Link to="/team">
                 <div
-                    className="gallery-item-image masked"
-                    style={{
-                        backgroundImage: `url(${src})`,
-                        clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
-                    }}></div>
-            </div>
+                    className={
+                        !isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"
+                    }>
+                    <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
+                    <div
+                        className="gallery-item-image masked"
+                        style={{
+                            backgroundImage: `url(${src})`,
+                            clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
+                        }}></div>
+                </div>
+            </Link>
         </div>
     );
 };
