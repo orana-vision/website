@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Contact.css";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
@@ -20,20 +21,36 @@ const ContactForm = () => {
     }
 
     return (
-        <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST" target="_blank">
-            <div>
-                <input type="text" placeholder="Your name" name="name" required />
+        <section id="contact">
+            <div className="form-container">
+                <div className="form-title">Let's Talk</div>
+                <form action="https://public.herotofu.com/v1/f4554bf0-31d1-11ed-8988-6185f597c7d8" method="post">
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input name="Name" id="name" type="text" required />
+                    </div>
+                    <div>
+                        <label for="email">Your Email</label>
+                        <input name="Email" id="email" type="email" required />
+                    </div>
+                    <div>
+                        <select name="Product" id="product" required>
+                            <option value="Websites">Websites</option>
+                            <option value="E-shops">E-shops</option>
+                            <option value="Mobile Apps">Mobile Apps</option>
+                            <option value="Custom">Custom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <input type="text" name="Message" id="message" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
             </div>
-            <div>
-                <input type="email" placeholder="Email" name="email" required />
-            </div>
-            <div>
-                <textarea placeholder="Your message" name="message" required />
-            </div>
-            <div>
-                <button type="submit"> Send a message </button>
-            </div>
-        </form>
+        </section>
     );
 };
 

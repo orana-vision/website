@@ -19,7 +19,7 @@ const About = () => {
 
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [animateMember, setAnimateMember] = useState("default");
-    console.log(mousePosition);
+    // console.log(mousePosition);
 
     const [eshopPos, setEshopPos] = useState({ top: 0, left: 0 });
     const handleChange = (event, newValue) => {
@@ -31,7 +31,7 @@ const About = () => {
     };
 
     const handleInHover = (icon) => {
-        console.log("IN");
+        // console.log("IN");
         switch (icon) {
             case "phone":
                 setHover({ ...hover, phoneHover: true });
@@ -44,8 +44,7 @@ const About = () => {
         }
     };
     const handleOutHover = (icon) => {
-        console.log("OUT");
-
+        // console.log("OUT");
         switch (icon) {
             case "phone":
                 setHover({ ...hover, phoneHover: false });

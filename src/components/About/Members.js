@@ -10,7 +10,6 @@ const MembersItem = () => {
     const mouseContext = useContext(CursorContext);
 
     const isInViewPort = useIsInViewport(ref);
-    console.log(isInViewPort);
 
     const [clipMaskRadius, setClipMaskRadius] = useState(0);
     const [clipMask, setClipMask] = useState({ x: 0, y: 0 });
