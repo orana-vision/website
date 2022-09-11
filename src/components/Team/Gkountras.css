@@ -1,12 +1,38 @@
 .myName{
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: 6rem;
   font-family: "Caviar Dreams", monospace;
   font-weight: bold;
   animation-duration: 1s;
   animation-name: fadein;
 }
+#n1,
+#n2,
+#n3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1251%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1252)'%3e%3c/rect%3e%3cpath d='M125.44719892567903 509.6652971952112L295.6537014391595 491.93985888207766 209.85131354792892 369.4013496415031z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1171.8224598975078 323.92378793457715L1222.9282058519202 197.432627988778 1045.3312999517086 272.81804198016476z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M678.3853076881153 136.11659786317256L588.5799653055578 156.84979481244545 609.3131622548308 246.65513719500285 699.1185046373881 225.92194024572996z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M896.2023894365452 224.92039144189465L940.1015150990281 130.77841265438138 845.9595363115147 86.87928699189854 802.060410649032 181.0212657794118z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M515.6444623871312 16.496808547531597L450.4728774409564 144.40324582331553 578.3793147167404 209.5748307694903 643.5508996629151 81.66839349370636z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M977.8054835830445 160.14752398015588L873.0934458086235 137.8902932653635 892.0636186236454 306.0869652843912z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M359.08766057503357 492.8833029157464L510.5650637847142 498.17301039644025 364.3773680557274 341.4058997060657z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M37.90965307005299 87.2858491668191L137.99446509627887 48.86688937667088 99.57550530613065-51.21792264955499-0.5093067200952319-12.798962859406771z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M630.997%2c626.955C665.814%2c628.409%2c702.831%2c621.433%2c722.246%2c592.496C743.716%2c560.496%2c746.299%2c517.733%2c726.429%2c484.716C707.082%2c452.568%2c668.467%2c438.922%2c630.997%2c440.873C596.873%2c442.65%2c567.734%2c463.844%2c551.354%2c493.832C535.673%2c522.54%2c535.265%2c557.318%2c552.059%2c585.389C568.423%2c612.741%2c599.152%2c625.625%2c630.997%2c626.955' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1162.5010033940996 372.25279995757796L1138.7742960979856 276.7023342928144 1075.831976376092 335.39699698998027z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M883.5937817288545 392.80959994967486L782.3204865560441 461.1193000724325 850.6301866788017 562.392595245243 951.9034818516122 494.0828951224853z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1251'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='50%25' x2='100%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1252'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: round;
+  position: sticky;
+}
 
+.next{
+  background-color: rgba(0, 0, 0, 0.647);
+  padding: 1.2rem;
+  border-radius: 50%;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next:visited {
+  color: rgb(255, 255, 255);
+  
+}
 .myName:hover{
   transform: scale(1.005);
 }
@@ -45,7 +71,10 @@
 .img-hover-zoom {
   height: 500px;
   /* [1.1] Set it as per your need */
+  display: flex;
   overflow: hidden;
+  align-items: center;
+  
   /* [1.2] Hide the overflowing of child elements */
 }
 
@@ -75,3 +104,21 @@
       transform: scale(1);
     }
   }
+
+
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram{
+  background: #55ACEE;
+    color: white;
+}

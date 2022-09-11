@@ -1,0 +1,113 @@
+.myName{
+  color:rgb(255, 255, 255);
+  font-size: 6rem;
+  font-family: "Caviar Dreams", monospace;
+  font-weight: bold;
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+.myName p{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 0;
+}
+#n1,
+#n2,
+#n3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1315%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsLinearGradient1316)'%3e%3c/rect%3e%3cpath d='M873.93 1272.7C1105.77 1129.48 1093.71 341.22 1399.18 317.57 1704.64 293.92 1770.66 628.89 1924.42 641.57' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1148.82 1235.64C1251.37 1221.02 1179.24 1011.92 1474.93 980.01 1770.62 948.1 1933.86 576.59 2127.14 558.81' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M383.87 1168.5C646.41 1133.47 732.05 569.11 1227.2 527.2 1722.35 485.29 1836.3 127.5 2070.53 116.8' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M767.14 1086.65C974.21 974.46 882.34 281.42 1254.02 280.2 1625.69 278.98 1951.21 792.67 2227.77 809.4' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M452.59 1198.46C658.2 1118.05 681.22 509.08 981.27 491.11 1281.31 473.14 1245.6 626.11 1509.94 626.11 1774.28 626.11 1902.21 492.17 2038.62 491.11' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1315'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1316'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 31%2c 71%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+}
+
+.next{
+  background-color: rgba(0, 0, 0, 0.647);
+  padding: 1.2rem;
+  border-radius: 50%;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next:visited {
+  color: rgb(255, 255, 255);
+  
+}
+.myName:hover{
+  transform: scale(1.005);
+}
+
+.nameContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+
+.profileImage{
+  border-radius: 20%;
+}
+#header{
+  width: 100%;
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:  stretch;
+  justify-items: center;
+}
+
+.subtitle{
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  animation-duration: 1s !important;
+  animation-name: slidein;
+}
+
+.img-hover-zoom {
+  height: 500px;
+  /* [1.1] Set it as per your need */
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  
+  /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom--quick-zoom img {
+  transform-origin: 50% 50%;
+  transition: transform 0.5s, visibility 0.5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover img {
+  transform: scale(1.02);
+}
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  
+    85% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
