@@ -9,6 +9,7 @@ export default function Team() {
   return (
     <div class="container">
       <TeamNav setSelected={setSelected} selected={selected} />
+
       <div className="personCard">
         <Gkountras setSelected={setSelected} />
       </div>

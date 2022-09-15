@@ -6,13 +6,15 @@
   animation-duration: 1s;
   animation-name: fadein;
 }
-.myName p{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  margin: 0;
+.nameContainer p{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+#horgosText{
+  margin-left: 4rem;
 }
 #n1,
 #n2,
@@ -46,6 +48,7 @@
 
 .nameContainer{
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
@@ -61,14 +64,15 @@
 }
 
 .headerContainer{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items:  stretch;
-  justify-items: center;
+  flex-direction: row;
+  align-items:  center;
+  justify-content: space-between;
 }
 
 .subtitle{
-  font-size: 25px;
+  font-size: 22px;
   display: flex;
   justify-content: flex-end;
   animation-duration: 1s !important;
@@ -76,11 +80,13 @@
 }
 
 .img-hover-zoom {
+  width: 100%;
   height: 500px;
   /* [1.1] Set it as per your need */
   display: flex;
   overflow: hidden;
   align-items: center;
+  justify-content: center ;
   
   /* [1.2] Hide the overflowing of child elements */
 }
