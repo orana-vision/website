@@ -8,6 +8,7 @@ export default function Team() {
   const [selected, setSelected] = useState(1);
   return (
     <div class="container">
+      <div className="top"></div>
       <TeamNav setSelected={setSelected} selected={selected} />
 
       <div className="personCard">
