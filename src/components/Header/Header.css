@@ -53,6 +53,8 @@ button {
   justify-content: flex-end;
   align-items: center;
   height: 100vh;
+  background-image: url(../../assets/circuit.svg);
+
 }
 
 .border-gradient {
