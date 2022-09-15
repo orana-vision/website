@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../../assets/contact.jpg);
+    /* background: url(../../assets/contact.jpg); */
     background-size: cover;
     background-attachment: fixed;
 }
