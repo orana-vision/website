@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { BsGlobe2, BsPhone } from "react-icons/bs";
 import { AiOutlineShopping } from "react-icons/ai";
 import "./About.css";
-import websiteSvg from "../../assets/undraw_add_color_re_buro.svg";
-import mobileSvg from "../../assets/undraw_mobile_analytics_72sr.svg";
-import eshopSvg from "../../assets/undraw_online_test_re_kyfx.svg";
+import websiteSvg from "../../assets/website.svg";
+import mobileSvg from "../../assets/mobile.svg";
+import eshopSvg from "../../assets/eshop.svg";
 import HORGOS from "../../assets/horgos.jpg";
 import GKOUNTRAS from "../../assets/me.jpg";
 import cursorSvg from "../../assets/cursor.svg";
@@ -76,31 +76,31 @@ const About = () => {
 
   return (
     <section className="container" id="about">
-      <div className="about-text">About</div>
+      <div className="about-text">Ποιοί έιμαστε</div>
       <div className="services-container">
         <div className="service" onMouseEnter={() => handleInHover("phone")} onMouseLeave={() => handleOutHover("phone")}>
           {/* <div className={hover.phoneHover ? "icons flip-in" : "icons"}>
                         <BsPhone style={{ color: "#06A77D" }} className="img-phone" />
                     </div> */}
-          <img className="mobile-svg" src={mobileSvg} alt="horgos" />
-          <div className="text">We develop custom mobile apps that can help your bussiness.</div>
+          <img className="mobile-svg" src={mobileSvg} alt="mobile-apps" />
+          <div className="text">Κατασκευάζουμε mobile εφαρμογές που θα απογείώσουν την επιχείρηση σας</div>
         </div>
         <div className="service" onMouseEnter={() => handleInHover("web")} onMouseLeave={() => handleOutHover("web")}>
           {/* <div className={hover.webHover ? "icons flip-in" : "icons"}>
                         <BsGlobe2 style={{ color: "#9395D3" }} />
                     </div> */}
-          <img className="svg-icon" src={websiteSvg} alt="horgos" />
-          <div className="text">We develop custom mobile apps that can help your bussiness.</div>
+          <img className="svg-icon" src={websiteSvg} alt="websites" />
+          <div className="text">Δημιουργούμε την ιστοσελίδα που θα σας κάνει να ξεχωρίσετε από τους υπόλοιπους</div>
         </div>
         <div className="service" onMouseEnter={() => handleInHover("eshop")} onMouseLeave={() => handleOutHover("eshop")}>
           {/* <div className={hover.eshopHover ? "icons flip-in" : "icons"}>
                         <AiOutlineShopping style={{ color: "#F1A208" }} />
                     </div> */}
-          <img onMouseMove={eshopMouseMove} className="svg-icon" style={{ ...eshopPos }} src={eshopSvg} alt="horgos" />
-          <div className="text">We develop custom mobile apps that can help your bussiness.</div>
+          <img onMouseMove={eshopMouseMove} className="svg-icon" style={{ ...eshopPos }} src={eshopSvg} alt="eshops" />
+          <div className="text">Κατασκευάζουμε το δικό σας e-shop ώστε η επιχείρηση σας να λειτουργεί 24 ώρες το 24ωρο</div>
         </div>
       </div>
-      <div>Meet Orana Team</div>
+      <div className="meet-our-team">Γνωρίστε την ομάδα μας:</div>
       <div className="members-container">
         <Members />
       </div>
