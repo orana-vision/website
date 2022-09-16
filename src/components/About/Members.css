@@ -43,7 +43,7 @@
 }
 
 .gallery-item-image {
-    cursor: none;
+    cursor: pointer;
     background-size: cover;
     background-position: center;
     transform-origin: center;
