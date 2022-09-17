@@ -64,13 +64,13 @@ const VerticalCarousel = () => {
                     className="carousel"
                     style={{ transform: `translateZ(${-radius}px) rotateX(${angle}deg)` }}>
                     <div className={selectedOpacity === 1 ? "carousel__cell cell_selected" : "carousel__cell"}>
-                        E-shop
+                        E-shops
                     </div>
                     <div className={selectedOpacity === 2 ? "carousel__cell cell_selected" : "carousel__cell"}>
                         Websites
                     </div>
                     <div className={selectedOpacity === 3 ? "carousel__cell cell_selected" : "carousel__cell"}>
-                        Mobile App
+                        Mobile Apps
                     </div>
                 </div>
             </div>

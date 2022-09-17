@@ -43,6 +43,7 @@ const MembersItem = () => {
       });
     });
   }, []);
+  const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
 
   return (
     <div
@@ -74,7 +75,7 @@ const MembersItem = () => {
 };
 
 const Members = () => {
-  const images = ["../../assets/horgos.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
+  const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
   let key = 0;
   return (
     <div className="gallery">

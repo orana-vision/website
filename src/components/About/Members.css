@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 100px;
+    margin: 3rem;
 }
 
 .gallery-item {
@@ -11,6 +12,7 @@
     overflow: hidden;
     position: relative;
     will-change: transform;
+    border-radius: 15px;
 
     clip-path: inset(100% 0% 0% 0%);
 
@@ -41,7 +43,7 @@
 }
 
 .gallery-item-image {
-    cursor: none;
+    cursor: pointer;
     background-size: cover;
     background-position: center;
     transform-origin: center;
