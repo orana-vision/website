@@ -3,6 +3,7 @@
 }
 
 .App-header {
+  
   background-color: var(--color-bg);
   /* background-image: url("/src/assets/header-demo.png"); */
   min-height: 100vh;
@@ -12,5 +13,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  /* background-image: url(./assets/circuit.svg); */
+
+
+
+  background-image: url("./assets/Circuit\ Board.png");
+  background-attachment: fixed;
+  
+
 }
