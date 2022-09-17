@@ -39,18 +39,19 @@ font-size: 20px;
 }
 
 .timeline-container{
-    width: 100%;
+    width: fit-content;
     display: flex;
     margin-top: 2rem;
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    width: 50%;
+    
 }
 
 .timeline{
     margin-top: 4rem;
+    margin-right: 4rem;
     
 }
 .timeline-item{

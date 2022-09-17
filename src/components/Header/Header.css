@@ -50,9 +50,10 @@ button {
   user-select: none;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .border-gradient {
@@ -245,4 +246,13 @@ button {
   height: 100%;
   background-color: 	'rgb(232, 228, 228)' !important;
   color: #e8e4e4 !important;
+}
+
+.flex-header{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }

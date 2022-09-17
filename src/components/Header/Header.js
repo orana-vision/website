@@ -18,36 +18,38 @@ const Header = () => {
     };
     return (
         <section id="header">
-            <div className="row">
-                <div className="logo-container">
-                    <img src={LOGO} alt="logo" className="logo" />
-                    <h1 className="typewriter">the New Vision.</h1>
-                </div>
+            <div className="flex-header">
+                <div className="row">
+                    <div className="logo-container">
+                        <img src={LOGO} alt="logo" className="logo" />
+                        <h1 className="typewriter">the New Vision.</h1>
+                    </div>
 
-                <div className="info">
-                    <VerticalCarousel />
+                    <div className="info">
+                        <VerticalCarousel />
+                    </div>
                 </div>
-            </div>
-            <div className="bottom-container">
-                <div className="child buttons-container">
-                    <button className="neomorphism filled">
-                        <a href="#experience">See Projects</a>
-                    </button>
-                    <button className="neomorphism">
-                        <a href="#contact">Let's talk</a>
-                    </button>
+                <div className="bottom-container">
+                    <div className="child buttons-container">
+                        <button className="neomorphism filled">
+                            <a href="#experience">See Projects</a>
+                        </button>
+                        <button className="neomorphism">
+                            <a href="#contact">Let's talk</a>
+                        </button>
+                    </div>
+                    <div className="child waves">
+                        <Waves />
+                    </div>
                 </div>
-                <div className="child waves">
-                    <Waves />
-                </div>
-            </div>
-            {/* <a href="#experience">
+                {/* <a href="#experience">
                 <div className="project-demo" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                     <div id="desc">{data.headerDemo.name}</div>
                     <img src={PROJ} alt={data.headerDemo.name} className={imageHover ? "open" : "close"}></img>
                     {data.headerDemo.name}
                 </div>
             </a> */}
+            </div>
         </section>
     );
 };
