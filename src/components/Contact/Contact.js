@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.css";
 import "./Contact.css";
-import LOGO from "../../assets/orana-logo copy.png";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
@@ -25,10 +24,7 @@ const ContactForm = () => {
     return (
         <section id="contact">
             <div className="form-container">
-                <div className="form-title">
-                    Let's Talk
-                    <image src={LOGO} />
-                </div>
+                <div className="form-title">Let's Talk</div>
                 <form
                     className="form-content"
                     action="https://public.herotofu.com/v1/f4554bf0-31d1-11ed-8988-6185f597c7d8"
