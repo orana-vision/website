@@ -20,12 +20,16 @@ const Footer = () => {
                             <BsFillTelephoneFill className="footer-icons" />
                             <p>6946930146</p>
                         </span>
-                        <span>
-                            <MdEmail className="footer-icons" /> <p>orana.vision@gmail.com</p>
-                        </span>
-                        <span>
-                            <BsLinkedin className="footer-icons" /> <p>LinkedIn</p>
-                        </span>
+                        <a href="mailto:orana.vision@gmail.com">
+                            <span>
+                                <MdEmail className="footer-icons" /> <p>orana.vision@gmail.com</p>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/orana-vision/" target="_blank">
+                            <span>
+                                <BsLinkedin className="footer-icons" /> <p>LinkedIn</p>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div className="footer-childs">

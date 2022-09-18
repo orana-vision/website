@@ -17,8 +17,6 @@ const About = () => {
     const [value, setValue] = React.useState(0);
 
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [animateMember, setAnimateMember] = useState("default");
-    // console.log(mousePosition);
 
     const [eshopPos, setEshopPos] = useState({ top: 0, left: 0 });
     const handleChange = (event, newValue) => {
@@ -69,7 +67,6 @@ const About = () => {
         hover: {
             x: mousePosition.x - "25%",
             y: mousePosition.y - "25%",
-            // filter: "brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5)",
             opacity: 1,
         },
     };
@@ -77,15 +74,12 @@ const About = () => {
     return (
         <section className="container" id="about">
             <div className="flex-about">
-                <div className="about-text">Ποιοί έιμαστε</div>
+                <div className="about-text">Ποιοί είμαστε</div>
                 <div className="services-container">
                     <div
                         className="service"
                         onMouseEnter={() => handleInHover("phone")}
                         onMouseLeave={() => handleOutHover("phone")}>
-                        {/* <div className={hover.phoneHover ? "icons flip-in" : "icons"}>
-                        <BsPhone style={{ color: "#06A77D" }} className="img-phone" />
-                    </div> */}
                         <img className="mobile-svg" src={mobileSvg} alt="mobile-apps" />
                         <div className="text">
                             Κατασκευάζουμε mobile εφαρμογές που θα απογείώσουν την επιχείρηση σας
@@ -95,9 +89,6 @@ const About = () => {
                         className="service"
                         onMouseEnter={() => handleInHover("web")}
                         onMouseLeave={() => handleOutHover("web")}>
-                        {/* <div className={hover.webHover ? "icons flip-in" : "icons"}>
-                        <BsGlobe2 style={{ color: "#9395D3" }} />
-                    </div> */}
                         <img className="svg-icon" src={websiteSvg} alt="websites" />
                         <div className="text">
                             Δημιουργούμε την ιστοσελίδα που θα σας κάνει να ξεχωρίσετε από τους υπόλοιπους
@@ -107,9 +98,6 @@ const About = () => {
                         className="service"
                         onMouseEnter={() => handleInHover("eshop")}
                         onMouseLeave={() => handleOutHover("eshop")}>
-                        {/* <div className={hover.eshopHover ? "icons flip-in" : "icons"}>
-                        <AiOutlineShopping style={{ color: "#F1A208" }} />
-                    </div> */}
                         <img
                             onMouseMove={eshopMouseMove}
                             className="svg-icon"

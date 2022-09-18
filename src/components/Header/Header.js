@@ -30,25 +30,18 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="bottom-container">
-                    <div className="child buttons-container">
-                        <button className="neomorphism filled">
-                            <a href="#experience">See Projects</a>
-                        </button>
-                        <button className="neomorphism">
-                            <a href="#contact">Let's talk</a>
-                        </button>
-                    </div>
-                    <div className="child waves">
+                    <div className="waves-container">
                         <Waves />
                     </div>
+                    <div className="buttons-container">
+                        <button className="neomorphism filled">
+                            <a href="#experience">Συχνές ερωτήσεις</a>
+                        </button>
+                        <button className="neomorphism">
+                            <a href="#contact">Επικοινωνία</a>
+                        </button>
+                    </div>
                 </div>
-                {/* <a href="#experience">
-                <div className="project-demo" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                    <div id="desc">{data.headerDemo.name}</div>
-                    <img src={PROJ} alt={data.headerDemo.name} className={imageHover ? "open" : "close"}></img>
-                    {data.headerDemo.name}
-                </div>
-            </a> */}
             </div>
         </section>
     );

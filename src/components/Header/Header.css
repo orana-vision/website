@@ -1,103 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&family=Oxygen:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&family=Oxygen:wght@300;400&display=swap");
 
 .typewriter {
-  color: rgb(255, 255, 255);
-  width: max-content;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  font-size: 60px !important;
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 0 20px auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 1.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    color: rgb(255, 255, 255);
+    width: max-content;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    font-size: 60px !important;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 0 20px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-  
+
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
 }
 
 button {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  padding:13px 18px;
-  margin: 10px 25px 0 25px;
-  cursor: pointer;
-
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 13px 18px;
+    margin: 10px 25px 0 25px;
+    cursor: pointer;
 }
 
-
 #header a {
-  text-decoration: none;
-  /* color: rgb(255, 255, 255); */
-  font-size: 15px;
-  padding: 20px;
-  font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    font-size: 15px;
+    padding: 20px;
+    font-family: "Oxygen", sans-serif;
 }
 
 #header {
-  overflow: hidden;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-
-  width: 100%;
-
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 7rem; */
 }
 
 .border-gradient {
-  border: 2.5px solid;
-  border-image-slice: 1;
-  /* border-width:2px; */
-  clip-path: polygon(0 0, 12px 0, 12px 3px, 24px 3px, 24px 0, 100% 0, 100% 100%, 0 100%);
+    border: 2.5px solid;
+    border-image-slice: 1;
+    /* border-width:2px; */
+    clip-path: polygon(0 0, 12px 0, 12px 3px, 24px 3px, 24px 0, 100% 0, 100% 100%, 0 100%);
 }
 .border-gradient-card {
-  border-image-source: var(--color-gradient);
+    border-image-source: var(--color-gradient);
 }
 
 .neomorphism {
-  /* background-image: var(--color-gradient); */
-  background-color: var(--color-bg-light);
-  border: 2.5px transparent;
-  border-radius: 4rem;
-  width: 10.5rem;
-  height: 4rem;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  12px 12px 24px #bebebe,
-              -12px -12px 24px #ffffff;
-  transition: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
+    /* background-image: var(--color-gradient); */
+    background-color: var(--color-bg-light);
+    border: 2.5px transparent;
+    border-radius: 4rem;
+    width: 10.5rem;
+    height: 4rem;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
 }
 
 .neomorphism:hover {
-  box-shadow:  5px 5px 10px #bebebe,
-              -5px -5px 10px #ffffff;
-  border: 2.5px #bebebe;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    border: 2.5px #bebebe;
 }
 
 .neomorphism a {
-  color: black;
+    color: black;
 }
 
 .filled a {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .filled {
@@ -105,116 +106,154 @@ button {
 }
 
 .logo {
-  width:80%;
-  /* transform: translateX(-5%); */
-  margin: 0;
-  padding: 0;
+    width: 80%;
+    /* transform: translateX(-5%); */
+    margin: 0;
+    padding: 0;
 }
 
 .project-demo {
-  height: 13rem !important;
-  width: 20rem !important;
-  background-image: var(--color-gradient);
-  /* justify-items: center; */
-  border-radius: 1rem;
-  margin: 2rem auto 5rem auto;
-  padding-top: 1rem;
-  position: relative;
-  z-index: 1;
-  font-size: 19px;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  line-height: 22rem;
-  box-shadow: 10px 11px 43px -15px rgba(0,0,0,0.75);
-  /* justify-content: center; */
-  /* transform: translateX(40%); */
+    height: 13rem !important;
+    width: 20rem !important;
+    background-image: var(--color-gradient);
+    /* justify-items: center; */
+    border-radius: 1rem;
+    margin: 2rem auto 5rem auto;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+    font-size: 19px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    line-height: 22rem;
+    box-shadow: 10px 11px 43px -15px rgba(0, 0, 0, 0.75);
+    /* justify-content: center; */
+    /* transform: translateX(40%); */
 }
 
 .project-demo img {
-  height: 100%;
-  right:6rem;
-  z-index:3;
-  transition: transform 0.3s;
-  position: absolute;
-  left: -1rem;
-  top: -0.04rem;
+    height: 100%;
+    right: 6rem;
+    z-index: 3;
+    transition: transform 0.3s;
+    position: absolute;
+    left: -1rem;
+    top: -0.04rem;
 }
 
 .open {
-  transform: translateY(-25%);
+    transform: translateY(-25%);
 }
 
 .close {
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
-.row{
-  /* display: flex;
+.row {
+    /* display: flex;
   flex-direction: row; */
-  margin-top: 7rem;
-  /* flex: 1; */
-  width: 100%;
-  height: 100%;
-  display: grid;
-  column-gap: normal;
-  grid-template-columns: repeat(2, 1fr);
-
+    /* margin-top: 7rem; */
+    /* flex: 1; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex: 1 1 1;
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.info{
-  display: flex;
-  align-items: center;
-  justify-items: flex-start;
-  height: 100%;
-  margin-left: 7rem;
-  width: 100%;
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    /* margin-left: 7rem; */
+    width: 100%;
 }
 
 .logo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  padding: 5rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 2rem 2rem 0;
 }
 
 .bottom-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-   /* transform: translateY(-4rem);  */
-  /* flex:  1; */
-  /* bottom: 0; */
-  /* position: relative; */
-  /* bottom: -5rem;   */
+    width: 100%;
+    height: 100%;
+    flex: 1 1 1;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* transform: translateY(-4rem);  */
+    /* flex:  1; */
+    /* bottom: 0; */
+    /* position: relative; */
+    /* bottom: -5rem;   */
 }
 .buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  /* transform: translateY(165%); */
-  z-index: 2;
-  /* position: relative; */
-  top: 15rem;
-  left: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50%;
+    background-color: var(--color-bg-light);
+    /* z-index: 1000; */
 }
 
-.child {
-  position: absolute;
+/* .child {
+    position: absolute;
+} */
+
+@media (max-width: 1100px) {
+    .row {
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 1100px){
-  .row {
-  grid-template-rows: repeat(2, 1fr);
-
-  }
+.project-demo #desc {
+    z-index: 2;
+    font-size: 19px;
+    width: 100%;
+    text-align: center;
+    align-content: flex-end;
+    margin-top: 10rem;
+    position: absolute;
+    bottom: 10px;
+    transform: translateY(-10%);
 }
+
+.waves-container {
+    width: 100%;
+    height: 50%;
+    flex: 1;
+}
+
+.flex-header {
+    display: flex;
+    /* margin-top: 7rem; */
+
+    /* flex: 50% 50%; */
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
 /* @keyframes slide-up {
   from {
-    transform: translateY(0%);
+      transform: translateY(0%);
   }
   to {
     transform: translateY(-25%);
@@ -231,31 +270,10 @@ button {
     transform: translateY(0%);
   }
 } */
-
-.project-demo #desc {
-  z-index:2;
-  font-size: 19px;
-  width: 100%;
-  text-align: center;
-  align-content: flex-end;
-  margin-top: 10rem;
-  position: absolute;
-  bottom: 10px;
-  transform: translateY(-10%);
-}
-
-.waves{
-  margin-top: -1rem;
-  height: 100%;
-  background-color: 	'rgb(232, 228, 228)' !important;
-  color: #e8e4e4 !important;
-}
-
-.flex-header{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
+      
+      /* .waves {
+          margin-top: -1rem;
+          height: 100%;
+          background-color: "rgb(232, 228, 228)" !important;
+          color: #e8e4e4 !important;
+      } */
