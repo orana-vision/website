@@ -41,7 +41,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className="footer-childs">
+                <div className="footer-childs logo">
                     <img className="logo-spin" src={LOGO} alt="orana website company" />
                 </div>
                 <div className="footer-childs">

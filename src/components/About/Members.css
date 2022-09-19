@@ -13,9 +13,7 @@
     position: relative;
     will-change: transform;
     border-radius: 15px;
-
     clip-path: inset(100% 0% 0% 0%);
-
     transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
