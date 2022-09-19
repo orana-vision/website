@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ME from "../../assets/me.jpg";
+import Kemal from "../../assets/kemalidis.jpg";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import "./Gkountras.css";
 import linkedin from "../../assets/linkedin.png";
@@ -10,7 +10,7 @@ const Gkountras = () => {
     <div className="gkountras-container">
       <div className="details">
         <div class="img-hover-zoom img-hover-zoom--quick-zoom">
-          <img src={ME} alt="giannis-gkountras" width="400" height="400" className="profileImage" />
+          <img src={Kemal} alt="xaris-kemalidis" width="400" height="400" className="profileImage" />
         </div>
         <div className="find">Βρείτε με και εδώ:</div>
         <div className="socials">
@@ -25,7 +25,7 @@ const Gkountras = () => {
         </div>
       </div>
       <div className="details">
-        <p className="title">Γιάννης Γκούντρας</p>
+        <p className="title">Χάρης Κεμαλίδης</p>
 
         <p className="bio">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo ipsum ut nunc cursus, vel efficitur quam imperdiet. Sed dolor mauris, viverra quis turpis ac, pretium molestie

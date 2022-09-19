@@ -7,9 +7,6 @@ import "./Horgos.css";
 const Horgos = ({ setSelected }) => {
   return (
     <section id="n2">
-      <a className="next" href="#n1" onClick={() => setSelected(1)}>
-        <AiOutlineArrowUp />
-      </a>
       <div className="headerContainer">
         <div className="nameContainer" id="horgosText">
           <p className="myName">
@@ -27,10 +24,6 @@ const Horgos = ({ setSelected }) => {
           <img src={HORGOS} alt="giannis-gkountras" width="500" height="500" className="profileImage" />
         </div>
       </div>
-
-      <a className="next" href="#n3" onClick={() => setSelected(3)}>
-        <AiOutlineArrowDown />
-      </a>
     </section>
   );
 };
