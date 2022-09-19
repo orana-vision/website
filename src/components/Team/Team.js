@@ -13,7 +13,7 @@ import "./flickity.css";
 const flickityOptions = {
   initialIndex: 0,
   wrapAround: true,
-  autoPlay: 5000,
+  autoPlay: 2000,
 };
 
 export default function Team() {
