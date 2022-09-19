@@ -18,7 +18,7 @@ const Header = () => {
     };
     return (
         <section id="header">
-            <div className="flex-header">
+            <div className="flex-header container">
                 <div className="row">
                     <div className="logo-container">
                         <img src={LOGO} alt="logo" className="logo" />

@@ -18,8 +18,15 @@
     border-color: #212529   ;
 } */
 
+.container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .form-container {
-    width: 80%;
+    width: 100%;
     height: 80%;
     background-color: rgba(0,0,0, 0.94);
     border-radius: 2rem;

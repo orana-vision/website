@@ -1,9 +1,9 @@
 .gallery {
     height: 600px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
-    margin: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .gallery-item {
@@ -20,6 +20,9 @@
 }
 
 .gallery-item-wrapper {
+    margin: 1rem;
+    height: 100%;
+    width: 100%;
     transform: scale(1);
     transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
 }

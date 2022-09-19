@@ -16,11 +16,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
     padding: 1rem 0 1rem 0;
+}
+
+.container {
+    width: 1200px;
+    height: 100%
 }
 
 .contact-info {
@@ -37,8 +42,12 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
+}
+
+.logo {
+    justify-self: center;
 }
 
 .footer-icons {
@@ -52,10 +61,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .contact-info p {
-    margin:0;
+    margin-left: 10px;
 }
 
 .contact-info a {
@@ -65,7 +75,7 @@
 }
 .contact-info a:hover {
 
-    color: rgb(255, 181, 181);   
+    color: #c35fa4;   
 }
 
 .copyrights {
@@ -92,4 +102,29 @@
 .section-title {
     margin: 0;
     font-size: 20pt;
+}
+
+.logo-spin {
+    scale: 0.6;
+    animation: spin 12s infinite linear;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .telephons {
+    display: flex;
+    flex-direction: column;
+  }
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
