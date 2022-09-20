@@ -7,7 +7,8 @@
     background-color: var(--color-nav);
     display: flex;
     justify-content: space-evenly;
-    gap:4rem; 
+    align-items: center;
+    flex-gap:4rem;
     left:50%;
     transform: translateX(-50%);
     top: 1rem;
@@ -43,4 +44,57 @@ nav a {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     transition: all 1s;
     transition: 1s
+}
+
+.icon {
+    display: none;
+    align-self: flex-end;
+}
+@media screen and (max-width: 600px) {
+    .nav-modern a:not(:last-child) {
+        display: none;
+    }
+
+    #selector {
+        display: flex;
+    }
+
+    .nav-test a:not(:last-child) {
+        display: none;
+    }
+    
+    #selector {
+        display: flex;
+    }
+}
+
+
+#dropdown{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    padding: 2rem;
+    margin: 0;
+}
+
+li{
+    margin-top: 2rem ;
+}
+
+.selector{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.selector-button {
+    background-color: transparent;
+    border: none;
+}
+
+.selector-button:active{
+    opacity: 0.5;
 }
