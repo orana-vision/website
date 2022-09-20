@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&display=swap');
 
-nav {
+.nav-modern {
     position: fixed;
-    display: block;
     width: max-content;
     height: max-content;
     background-color: var(--color-nav);
     display: flex;
-    gap:4rem;
+    justify-content: space-evenly;
+    gap:4rem; 
     left:50%;
     transform: translateX(-50%);
     top: 1rem;
@@ -16,6 +16,8 @@ nav {
     backdrop-filter: blur(7px);
     z-index: 3;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    transition: all 1s;
+    transition: 1s
 }
 
 nav a {
@@ -24,4 +26,21 @@ nav a {
     font-size: 23px;
     text-decoration: none;
     padding: 5px;
+}
+
+.nav-test{
+    position: fixed; 
+    width:100%;
+    height: max-content;
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-evenly;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding: 0.3rem 1.3rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    transition: all 1s;
+    transition: 1s
 }
