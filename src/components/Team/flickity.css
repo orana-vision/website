@@ -14,6 +14,7 @@ https://flickity.metafizzy.co
     overflow: hidden;
     position: relative;
     height: 100%;
+    z-index: -1;
 }
 
 .flickity-slider {
@@ -51,6 +52,8 @@ https://flickity.metafizzy.co
     background: hsla(0, 0%, 100%, 0.75);
     border: none;
     color: #333;
+    z-index: 10;
+    
 }
 
 .flickity-button:hover {
@@ -91,10 +94,12 @@ https://flickity.metafizzy.co
 
 .flickity-prev-next-button.previous {
     left: 10px;
+    
 }
 
 .flickity-prev-next-button.next {
     right: 10px;
+   
 }
 
 /* right to left */
@@ -147,3 +152,4 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
     opacity: 1;
 }
+

@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import HORGOS from "../../assets/horgos.jpg";
-import { AiOutlineArrowDown } from "react-icons/ai";
+
 import "./Gkountras.css";
 import linkedin from "../../assets/linkedin.png";
 import git from "../../assets/github.png";
@@ -12,13 +12,14 @@ const Gkountras = () => {
         <div class="img-hover-zoom img-hover-zoom--quick-zoom">
           <img src={HORGOS} alt="giannis-horgos" width="400" height="400" className="profileImage" />
         </div>
-        <div className="find">Βρείτε με και εδώ:</div>
-        <div className="socials">
+        {/* <div className="find">Βρείτε με και εδώ:</div> */}
+        <div className="socials find">
+          Βρείτε με και εδώ:
           <div className="socials-bg">
-            <a href="https://www.linkedin.com/in/ioannis-s-horgos-b5889a21a/" target="_blank">
+            <a href="https://www.linkedin.com/in/ioannis-s-horgos-b5889a21a/" target="_blank" rel="noreferrer">
               <img src={linkedin} width={"40"} alt="linkedin" />
             </a>
-            <a href="https://github.com/giannishorgos" target="_blank">
+            <a href="https://github.com/giannishorgos" target="_blank" rel="noreferrer">
               <img src={git} width={"40"} alt="github" />
             </a>
           </div>
