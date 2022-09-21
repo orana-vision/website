@@ -63,3 +63,10 @@
 .masked {
     clip-path: circle(25% at 50% 50%);
 }
+
+@media (max-width: 1200px) {
+    .gallery {
+        flex-direction: column;
+        height: 800px;
+    }
+}
