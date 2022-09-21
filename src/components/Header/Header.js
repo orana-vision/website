@@ -18,14 +18,14 @@ const Header = () => {
     };
     return (
         <section id="header">
-            <div className="flex-header">
+            <div className="flex-header container">
                 <div className="row">
                     <div className="logo-container">
                         <img src={LOGO} alt="logo" className="logo" />
                         <h1 className="typewriter">the New Vision.</h1>
                     </div>
 
-                    <div className="info">
+                    <div className="info-header">
                         <VerticalCarousel />
                     </div>
                 </div>
