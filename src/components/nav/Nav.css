@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&display=swap');
 
-nav {
+.floating {
     position: fixed;
     display: block;
     width: max-content;
@@ -17,6 +17,7 @@ nav {
     z-index: 3;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 }
+
 
 nav a {
     color: white;

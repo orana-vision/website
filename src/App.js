@@ -11,12 +11,12 @@ import MainScreen from "./Screens/MainScreen";
 import TeamScreen from "./Screens/TeamScreen";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainScreen />} />
-        <Route path="/team" element={<TeamScreen />} />
-        {/*<div className="App">
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainScreen />} />
+                <Route path="/team" element={<TeamScreen />} />
+                {/*<div className="App">
             <header className="App-header">
               <Header />
               <About />
@@ -26,9 +26,9 @@ function App() {
               <Nav />
             </header>
   </div>*/}
-      </Routes>
-    </BrowserRouter>
-  );
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

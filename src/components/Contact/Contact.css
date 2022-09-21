@@ -18,8 +18,15 @@
     border-color: #212529   ;
 } */
 
+.container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .form-container {
-    width: 80%;
+    width: 100%;
     height: 80%;
     background-color: rgba(0,0,0, 0.94);
     border-radius: 2rem;
@@ -182,4 +189,19 @@
     width: 100%;
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5312260646446079) 59%, rgba(0,0,0,0) 100%);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+    }
+
+    .form-container {
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
 }

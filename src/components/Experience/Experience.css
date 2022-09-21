@@ -3,18 +3,24 @@ p {
     margin: 0;
 }
 #experience{
-    
+    width: 100%;
     height: fit-content;
     background-image: url('../../assets/question.png');
     user-select: none;
-    
+    display: flex;
+    justify-content: center;
 }
 .container{
+width: 1200px;
+height: 100%;
+}
+
+.flex-experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    padding: 1rem;
 }
 
 .faq-container{
@@ -27,7 +33,11 @@ p {
 .collapse{
     background-color: rgba(232,228,228,0.7);
     border-radius: 10px;
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .panel{
@@ -36,7 +46,7 @@ background-color: #e8e4e4;
 margin: 2rem;   
 border-radius: 15px !important;
 font-size: 20px;
-width: fit-content;
+width: 80%;
 }
 
 .timeline-container{
@@ -55,8 +65,21 @@ width: fit-content;
     margin-right: 4rem;
     
 }
+
+
 .timeline-item{
     margin: -5px;
     color: black;
     font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .collapse {
+        width: 95%;
+    }
+
 }
