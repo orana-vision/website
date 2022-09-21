@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.836a2ae7.css",
+    "main.js": "/static/js/main.d68a0e4d.js",
+    "static/js/787.5fec769a.chunk.js": "/static/js/787.5fec769a.chunk.js",
+    "static/media/horgos.jpg": "/static/media/horgos.c56c2fb62ffcd9671e79.jpg",
+    "static/media/header-demo.png": "/static/media/header-demo.c177233f94b4fb892640.png",
+    "static/media/me.jpg": "/static/media/me.a90fa669ac2ad529185b.jpg",
+    "static/media/contact.jpg": "/static/media/contact.aff66ab7a92b2e1394e1.jpg",
+    "static/media/gkountras.jpg": "/static/media/gkountras.b665fca37dca69adc56c.jpg",
+    "static/media/cursor.svg": "/static/media/cursor.e9f90323a4f0f5acf57c95e797705c42.svg",
+    "static/media/background-team.png": "/static/media/background-team.184c69e36c0c47c6a933.png",
+    "static/media/Circuit Board.png": "/static/media/Circuit Board.9c6cc92a9e7ff3cdb128.png",
+    "static/media/kemalidis.jpg": "/static/media/kemalidis.b130a72f34919ef7082a.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.e9db41041d38d6fb97b4.png",
+    "static/media/question.png": "/static/media/question.d1fd7a5ec987bcf94ca4.png",
+    "static/media/orana-logo copy.png": "/static/media/orana-logo copy.3be90640b006a1d63ed4.png",
+    "static/media/orana-logo.png": "/static/media/orana-logo.5da069f807ea5d430ebd.png",
+    "static/media/website.svg": "/static/media/website.b05f9e9743e2ba4ccf8fcbe1b02ce4c8.svg",
+    "static/media/mobile.svg": "/static/media/mobile.d405992a16101e026fb57fcc448063e2.svg",
+    "static/media/eshop.svg": "/static/media/eshop.c650b2dfe28351fe295a055a1de566d3.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.836a2ae7.css.map": "/static/css/main.836a2ae7.css.map",
+    "main.d68a0e4d.js.map": "/static/js/main.d68a0e4d.js.map",
+    "787.5fec769a.chunk.js.map": "/static/js/787.5fec769a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.836a2ae7.css",
+    "static/js/main.d68a0e4d.js"
+  ]
+}
