@@ -47,34 +47,30 @@ const VerticalCarousel = () => {
     // }, [selectedOpacity]);
 
     return (
-        <>
-            <div className="scene">
-                <div
-                    onScrollCapture={() => {
-                        setSelectedIndex(selectedIndex + 1);
-                        setSelectedOpacity((prev) => {
-                            switch (prev) {
-                                case 3:
-                                    return 1;
-                                default:
-                                    return prev + 1;
-                            }
-                        });
-                    }}
-                    className="carousel"
-                    style={{ transform: `translateZ(${-radius}px) rotateX(${angle}deg)` }}>
-                    <div className={selectedOpacity === 1 ? "carousel__cell cell_selected" : "carousel__cell"}>
-                        E-shops
-                    </div>
-                    <div className={selectedOpacity === 2 ? "carousel__cell cell_selected" : "carousel__cell"}>
-                        Websites
-                    </div>
-                    <div className={selectedOpacity === 3 ? "carousel__cell cell_selected" : "carousel__cell"}>
-                        Mobile Apps
-                    </div>
+        <div className="scene">
+            <div
+                onScrollCapture={() => {
+                    setSelectedIndex(selectedIndex + 1);
+                    setSelectedOpacity((prev) => {
+                        switch (prev) {
+                            case 3:
+                                return 1;
+                            default:
+                                return prev + 1;
+                        }
+                    });
+                }}
+                className="carousel"
+                style={{ transform: `translateZ(${-radius}px) rotateX(${angle}deg)` }}>
+                <div className={selectedOpacity === 1 ? "carousel__cell cell_selected" : "carousel__cell"}>E-shops</div>
+                <div className={selectedOpacity === 2 ? "carousel__cell cell_selected" : "carousel__cell"}>
+                    Websites
+                </div>
+                <div className={selectedOpacity === 3 ? "carousel__cell cell_selected" : "carousel__cell"}>
+                    Mobile Apps
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

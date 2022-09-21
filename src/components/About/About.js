@@ -73,7 +73,7 @@ const About = () => {
 
     return (
         <section className="container" id="about">
-            <div className="flex-about">
+            <div className="flex-about container    ">
                 <div className="about-text">Ποιοί είμαστε</div>
                 <div className="services-container">
                     <div

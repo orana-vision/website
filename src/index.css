@@ -43,3 +43,10 @@ section {
     --color-blue: rgba(37,51,110,1);
     --color-red: rgba(239,55,53,1);
 }
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
