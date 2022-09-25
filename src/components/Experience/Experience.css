@@ -73,6 +73,38 @@ width: 80%;
     font-size: 20px;
 }
 
+.faq-animation {
+    animation: faq-anim 2s;
+}
+
+@keyframes faq-anim {
+    0% {
+        opacity: 0.3;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+.timeline-animation {
+    animation: timeline-anim 2s;
+}
+
+@keyframes timeline-anim {
+    0% {
+        opacity: 0.3;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 100%;

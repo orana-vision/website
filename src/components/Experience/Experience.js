@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Collapse } from "antd";
 import { Timeline } from "antd";
 import "antd/dist/antd.css";
 import { ClockCircleOutlined } from "@ant-design/icons";
+import useIsInViewport from "../../utils/inViewport";
 
 import "./Experience.css";
 const Experience = () => {
@@ -11,12 +12,21 @@ const Experience = () => {
     const onChange = (key) => {
         console.log(key);
     };
+
+    const faqRef = useRef();
+    const timelineRef = useRef();
+    const faqTxtRef = useRef();
+    const timelineTxtRef = useRef();
+
     return (
         <section id="experience">
-            <div className="flex-experience container">
-                Συχνές ερωτήσεις:
-                <div className="faq-container">
-                    <Collapse defaultActiveKey={["1"]} onChange={onChange} className="collapse">
+            <div ref={faqTxtRef} className="flex-experience container">
+                <span>Συχνές ερωτήσεις</span>
+                <div ref={faqRef} className="faq-container">
+                    <Collapse
+                        defaultActiveKey={["1"]}
+                        onChange={onChange}
+                        className={useIsInViewport(faqRef) ? "collapse faq-animation" : "collapse"}>
                         <Panel header="Γιατί χρειάζομαι website;" key="1" className="panel">
                             <p>Το website είναι κάτι πολύ καλό.</p>
                         </Panel>
@@ -28,9 +38,13 @@ const Experience = () => {
                         </Panel>
                     </Collapse>
                 </div>
-                <br />Η πορεία με την Orana:
-                <div className="timeline-container">
-                    <Timeline mode="left" className="timeline">
+                <div ref={timelineTxtRef}>
+                    <span>Η πορεία με την Orana:</span>
+                </div>
+                <div ref={timelineRef} className="timeline-container">
+                    <Timeline
+                        mode="left"
+                        className={useIsInViewport(timelineRef) ? "timeline timeline-animation" : "timeline"}>
                         <Timeline.Item label="Σήμερα" className="timeline-item">
                             Επικοινωνείτε μαζί μας .
                         </Timeline.Item>
