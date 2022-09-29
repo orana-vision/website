@@ -21,7 +21,9 @@ const Experience = () => {
     return (
         <section id="experience">
             <div ref={faqTxtRef} className="flex-experience container">
-                <span>Συχνές ερωτήσεις</span>
+                <span className={useIsInViewport(faqTxtRef) ? "faq-txt-animation titles" : "titles"}>
+                    Συχνές ερωτήσεις
+                </span>
                 <div ref={faqRef} className="faq-container">
                     <Collapse
                         defaultActiveKey={["1"]}
@@ -39,7 +41,9 @@ const Experience = () => {
                     </Collapse>
                 </div>
                 <div ref={timelineTxtRef}>
-                    <span>Η πορεία με την Orana:</span>
+                    <span className={useIsInViewport(timelineTxtRef) ? "timeline-txt-animation titles" : "titles"}>
+                        Η πορεία με την Orana
+                    </span>
                 </div>
                 <div ref={timelineRef} className="timeline-container">
                     <Timeline

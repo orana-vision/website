@@ -73,6 +73,17 @@ width: 80%;
     font-size: 20px;
 }
 
+.titles {
+    font-weight:bold;
+    font-size: 50px;
+    color: var(--color-bg);
+    text-shadow: -1px -1px 0 var(--color-bg-light), 1px -1px 0 var(--color-bg-light), -1px 1px 0 var(--color-bg-light), 1px 1px 0 var(--color-bg-light);
+    transition: 0.8s color;
+    width: fit-content;
+    user-select: none;
+    margin-top: 3rem; 
+}
+
 .faq-animation {
     animation: faq-anim 2s;
 }
@@ -89,6 +100,22 @@ width: 80%;
     
 }
 
+.faq-txt-animation {
+    animation: faq-txt-anim 2s;
+}
+
+@keyframes faq-txt-anim {
+    0% {
+        opacity: 0.3;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
 .timeline-animation {
     animation: timeline-anim 2s;
 }
@@ -97,6 +124,23 @@ width: 80%;
     0% {
         opacity: 0.3;
         transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+.timeline-txt-animation {
+    margin-top: 10px;
+    animation: timeline-txt-anim 2s;
+}
+
+@keyframes timeline-txt-anim {
+    0% {
+        opacity: 0.3;
+        transform: translateX(20%);
     }
     100% {
         opacity: 1;
