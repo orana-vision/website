@@ -8,7 +8,7 @@ import Kemal from "./Kemal";
 import OranaLogo from "../../assets/orana-logo.png";
 
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
-import Flickity from "react-flickity-component";
+
 import "./flickity.css";
 import Footer from "../Footer/Footer";
 import { useEffect } from "react";
