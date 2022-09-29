@@ -26,6 +26,21 @@
     color: var(--color-bg)
 }
 
+.meet-team-text {
+    font-weight:bold;
+    font-size: 50px;
+    color: #e8e4e4;
+    text-shadow: -1px -1px 0 var(--color-bg), 1px -1px 0 var(--color-bg), -1px 1px 0 var(--color-bg), 1px 1px 0 var(--color-bg);
+    transition: 0.8s color;
+    width: fit-content;
+    user-select: none;
+    margin-top: 3rem;  
+}
+
+.meet-team-text:hover {
+    color: var(--color-bg)
+}
+
 
 .services-container {
     display: flex;
@@ -49,6 +64,66 @@
     margin: 0 1rem 0 1rem;
     box-shadow:  12px 12px 24px #bebebe,
     -12px -12px 24px #ffffff;
+}
+
+.service-animation {
+    animation: mb-app-animation 2s;
+}
+
+@keyframes mb-app-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+.members-animation {
+    animation: members-anim 2s;
+}
+
+@keyframes members-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+.about-txt-animation {
+    animation: about-txt-anim 3s;
+}
+
+@keyframes about-txt-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.meet-team-txt-animation {
+    animation: meet-team-txt-anim 3s;
+}
+
+@keyframes meet-team-txt-anim {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 .text {
