@@ -26,6 +26,7 @@ const Header = () => {
                     </div>
 
                     <div className="info-header">
+                        <p>Κατασκευάζουμε </p>
                         <VerticalCarousel />
                     </div>
                 </div>
