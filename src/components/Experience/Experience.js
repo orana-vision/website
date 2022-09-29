@@ -7,7 +7,7 @@ import useIsInViewport from "../../utils/inViewport";
 
 import "./Experience.css";
 const Experience = () => {
-    const { Panel } = Collapse;
+  const { Panel } = Collapse;
 
     const onChange = (key) => {
         console.log(key);
