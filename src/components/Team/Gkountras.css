@@ -96,7 +96,7 @@ body{
   .gkountras-container{
     flex-direction: column;
   
-    padding: 2rem;
+    padding: 0rem;
     flex-wrap: wrap;
     
   }
