@@ -227,6 +227,10 @@ button {
         width: 100%;
     }
 
+    .typewriter{
+    font-size: 30px !important;
+    }
+
 }
 
 .project-demo #desc {

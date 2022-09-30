@@ -6,7 +6,10 @@ import { AiOutlineAppstore } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiInfo } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+
 const Nav = () => {
+  const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -57,13 +60,17 @@ const Nav = () => {
           <div className="selector" id="selector">
             <button
               className="selector-button"
-              onClick={() =>
-                document.getElementById("dropdown").style.display === "none"
-                  ? (document.getElementById("dropdown").style.display = "block")
-                  : (document.getElementById("dropdown").style.display = "none")
-              }
+              onClick={() => {
+                if (document.getElementById("dropdown").style.display === "none") {
+                  document.getElementById("dropdown").style.display = "block";
+                  setClicked(true);
+                } else {
+                  document.getElementById("dropdown").style.display = "none";
+                  setClicked(false);
+                }
+              }}
             >
-              <FaBars />
+              {clicked ? <AiOutlineClose /> : <FaBars />}
             </button>
 
             <ul id="dropdown">
@@ -105,15 +112,18 @@ const Nav = () => {
           <div className="selector" id="selector">
             <button
               className="selector-button"
-              onClick={() =>
-                document.getElementById("dropdown").style.display === "none"
-                  ? (document.getElementById("dropdown").style.display = "block")
-                  : (document.getElementById("dropdown").style.display = "none")
-              }
+              onClick={() => {
+                if (document.getElementById("dropdown").style.display === "none") {
+                  document.getElementById("dropdown").style.display = "block";
+                  setClicked(true);
+                } else {
+                  document.getElementById("dropdown").style.display = "none";
+                  setClicked(false);
+                }
+              }}
             >
-              <FaBars />
+              {clicked ? <AiOutlineClose /> : <FaBars />}
             </button>
-
             <ul id="dropdown">
               <li>
                 <a href="#header">Home</a>
