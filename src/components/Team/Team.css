@@ -37,10 +37,7 @@ background: rgb(0, 0, 0);
 
 }
 
-body {
-    background-image: url("../../assets/background-team.png");
-    background-size: cover;
-}
+
 .carousel {
     width: 100%;
 }
@@ -54,19 +51,48 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: rgba(250, 235, 215, 0.467);
+    /* background-color: rgba(250, 235, 215, 0.467); */
     border-radius: 50px;
     padding: 0;
 }
 
 .carousel-container-big {
+    background-image: url("../../assets/background-team.png");
+        background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center; 
     width: 100vw;
-    height: 90vh;
+    height: fit-content;
+    min-height: 90vh;
+    
 }
 
+.carousel-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .6s ease opacity, .6s ease transform;
+    opacity: 1;
+     
+}
+
+.opacity-trans{
+    animation: opacity-animation 1s;
+}
+
+@keyframes opacity-animation{
+    0%{
+        opacity: 0.3;
+        scale: 0.95;
+    }
+
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
 .top {
     width: 100%;
     height: 4rem;
@@ -76,8 +102,24 @@ body {
     align-items: center;
     top: 0;
 }
-
-@media screen and (max-width: 768px) {
+.next{
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invisible{
+    display:none;
+    opacity: 0;
+    transition: 2s;
+}
+@media screen and (max-width: 1500px) {
 
     .carousel-container{
         transform: scale(0.9);
@@ -88,9 +130,14 @@ body {
     .carousel-cell {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: center;
+                align-items: center;
+            /* align-items: flex-start;
+            justify-content: flex-start; */
     }
+    .invisible {
+            display: none;
+        }
     
     .carousel-container-big{
         height: fit-content;

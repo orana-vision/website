@@ -219,4 +219,21 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.531226064644607
         height: fit-content;
         padding-bottom: 2rem;
     }
+
+    .title{
+        margin: 0 !important;
+        padding: 1rem 0 !important;
+    }
+
+    .paragraph{
+        margin: 2rem 0;
+    }
+
+    .form-input{
+        margin: 1rem 0;
+    }
+
+    textarea{
+        margin: 1rem 0;
+    }
 }

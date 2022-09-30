@@ -7,14 +7,9 @@ import Kemal from "./Kemal";
 
 import OranaLogo from "../../assets/orana-logo.png";
 
-import Flickity from "react-flickity-component";
-import "./flickity.css";
+import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
+
 import Footer from "../Footer/Footer";
-const flickityOptions = {
-  initialIndex: 0,
-  wrapAround: true,
-  autoPlay: 4000,
-};
 
 export default function Team() {
   return (
@@ -26,24 +21,83 @@ export default function Team() {
       </div>
       <div className="carousel-container-big">
         <div className="carousel-container">
-          <Flickity
-            className={"carousel"} // default ''
-            elementType={"div"} // default 'div'
-            options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-            static // default false
-          >
-            <div class="carousel-cell">
+          <div className="carousel-slide">
+            <div class="carousel-cell" id="cell-1">
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-1").classList.add("invisible");
+                  document.getElementById("cell-3").classList.remove("invisible");
+                  document.getElementById("cell-3").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowLeft />
+              </button>
               <Gkountras />
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-1").classList.add("invisible");
+                  document.getElementById("cell-2").classList.remove("invisible");
+                  document.getElementById("cell-2").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowRight />
+              </button>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell invisible" id="cell-2">
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-2").classList.add("invisible");
+                  document.getElementById("cell-1").classList.remove("invisible");
+                  document.getElementById("cell-1").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowLeft />
+              </button>
               <Seba />
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-2").classList.add("invisible");
+                  document.getElementById("cell-3").classList.remove("invisible");
+                  document.getElementById("cell-3").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowRight />
+              </button>
             </div>
-            <div class="carousel-cell">
+            <div class="carousel-cell invisible" id="cell-3">
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-3").classList.add("invisible");
+                  document.getElementById("cell-2").classList.remove("invisible");
+                  document.getElementById("cell-2").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowLeft />
+              </button>
               <Kemal />
+              <button
+                className="next"
+                onClick={() => {
+                  document.getElementById("cell-3").classList.add("invisible");
+                  document.getElementById("cell-1").classList.remove("invisible");
+                  document.getElementById("cell-1").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FiArrowRight />
+              </button>
             </div>
-          </Flickity>
+          </div>
         </div>
       </div>
       <div>

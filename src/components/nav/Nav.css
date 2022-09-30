@@ -51,7 +51,7 @@ nav a {
     display: none;
     align-self: flex-end;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .nav-modern a:not(:last-child) {
         display: none;
     }
@@ -74,7 +74,7 @@ nav a {
 
 
 #dropdown{
-    display: block;
+    display: none;
 }
 
 ul{

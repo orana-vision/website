@@ -5,7 +5,7 @@ p {
 #experience{
     width: 100%;
     height: fit-content;
-    background-image: url('../../assets/question.png');
+    /* background-image: url('../../assets/question.png');   */
     user-select: none;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ height: 100%;
 .panel{
 
 background-color: #e8e4e4;
-margin: 2rem;   
+margin: 1rem 0 1rem;   
 border-radius: 15px !important;
 font-size: 20px;
 width: 80%;
