@@ -1,28 +1,33 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import useIsInViewport from "../../utils/inViewport";
 // import "bootstrap/dist/css/bootstrap.css";
 import "./Contact.css";
 
 const ContactForm = () => {
-    const [submitted, setSubmitted] = useState(false);
-    const handleSubmit = () => {
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 100);
-    };
+    const containerRef = useRef();
+    // const [su    bmitted, setSubmitted] = useState(false);
+    // const handleSubmit = () => {
+    //     setTimeout(() => {
+    //         setSubmitted(true);
+    //     }, 100);
+    // };
 
-    if (submitted) {
-        return (
-            <>
-                <h2>Thank you!</h2>
-                <div>We'll be in touch soon.</div>
-            </>
-        );
-    }
+    // if (submitted) {
+    //     return (
+    //         <>
+    //             <h2>Thank you!</h2>
+    //             <div>We'll be in touch soon.</div>
+    //         </>
+    //     );
+    // }
 
     return (
         <section id="contact">
-            <div className="container">
-                <div className="form-container">
+            <div ref={containerRef} className="container">
+                <div
+                    className={
+                        useIsInViewport(containerRef) ? "form-container form-container-animation" : "form-container"
+                    }>
                     <div className="form-title"></div>
                     <div className="contact-box">
                         <div className="form-box">
@@ -33,7 +38,6 @@ const ContactForm = () => {
                                 <div className="form-input">
                                     <input name="Name" id="name" type="text" placeholder="'Ονομα" required />
                                 </div>
-
                                 <div className="form-input">
                                     <input name="Email" id="email" type="email" placeholder="E-mail" required />
                                 </div>
