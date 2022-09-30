@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { Collapse } from "antd";
 import { Timeline } from "antd";
-import "antd/dist/antd.css";
-import { AiOutlineClockCircle } from "react-icons/ai";
+// import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 import useIsInViewport from "../../utils/inViewport";
 
 import "./Experience.css";

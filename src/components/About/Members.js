@@ -16,6 +16,7 @@ const MembersItem = ({ src }) => {
 
   const [clipMaskRadius, setClipMaskRadius] = useState(0);
   const [clipMask, setClipMask] = useState({ x: 0, y: 0 });
+  // eslint-disable-next-line no-unused-vars
   const [reveal, setReveal] = useState(false);
 
   useEffect(() => {
@@ -46,7 +47,7 @@ const MembersItem = ({ src }) => {
       });
     });
   }, []);
-  const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
+  // const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
 
   return (
     <div

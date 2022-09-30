@@ -9,14 +9,16 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainScreen from "./Screens/MainScreen";
 import TeamScreen from "./Screens/TeamScreen";
+import ThankYouContactScreen from "./Screens/ThankYouContactScreen";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<MainScreen />} />
-                <Route path="/team" element={<TeamScreen />} />
-                {/*<div className="App">
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainScreen />} />
+        <Route path="/team" element={<TeamScreen />} />
+        <Route path="/thank-you" element={<ThankYouContactScreen />} />
+        {/*<div className="App">
             <header className="App-header">
               <Header />
               <About />
@@ -26,9 +28,9 @@ function App() {
               <Nav />
             </header>
   </div>*/}
-            </Routes>
-        </BrowserRouter>
-    );
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
