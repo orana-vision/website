@@ -9,13 +9,15 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainScreen from "./Screens/MainScreen";
 import TeamScreen from "./Screens/TeamScreen";
+import { useState } from "react";
 
 function App() {
+    const [language, setLanguage] = useState("gr");
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainScreen />} />
-                <Route path="/team" element={<TeamScreen />} />
+                <Route path="/" element={<MainScreen setLanguage={setLanguage} language={language} />} />
+                <Route path="/team" element={<TeamScreen setLanguage={setLanguage} language={language} />} />
                 {/*<div className="App">
             <header className="App-header">
               <Header />

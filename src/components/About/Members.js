@@ -70,7 +70,27 @@ const MembersItem = ({ src }) => {
               backgroundImage: `url(${src})`,
               clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
             }}
-          ></div>
+
+            onMouseLeave={() => {
+                setClipMaskRadius(0);
+                mouseContext.setSize("small");
+            }}>
+            <Link to="/team">
+                <div
+                    className={
+                        !isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"
+                    }>
+                    <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
+                    <div
+                        className="gallery-item-image masked"
+                        style={{
+                            backgroundImage: `url(${src})`,
+                            clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
+                        }}>
+                        <span className="member-name">Iwannhs</span>
+                    </div>
+                </div>
+            </Link>
         </div>
       </Link>
       {/* <h1 className="onomata">ti leei negro mou</h1> */}
