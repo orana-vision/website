@@ -9,14 +9,7 @@ import OranaLogo from "../../assets/orana-logo.png";
 
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
-import "./flickity.css";
 import Footer from "../Footer/Footer";
-import { useEffect } from "react";
-const flickityOptions = {
-  initialIndex: 0,
-  wrapAround: true,
-  autoPlay: 4000,
-};
 
 export default function Team() {
   return (
@@ -29,14 +22,6 @@ export default function Team() {
       <div className="carousel-container-big">
         <div className="carousel-container">
           <div className="carousel-slide">
-            {/* <Flickity
-            className={"carousel"} // default ''
-            elementType={"div"} // default 'div'
-            options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-            static // default false
-          > */}
             <div class="carousel-cell" id="cell-1">
               <button
                 className="next"
@@ -44,6 +29,7 @@ export default function Team() {
                   document.getElementById("cell-1").classList.add("invisible");
                   document.getElementById("cell-3").classList.remove("invisible");
                   document.getElementById("cell-3").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowLeft />
@@ -55,6 +41,7 @@ export default function Team() {
                   document.getElementById("cell-1").classList.add("invisible");
                   document.getElementById("cell-2").classList.remove("invisible");
                   document.getElementById("cell-2").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowRight />
@@ -67,6 +54,7 @@ export default function Team() {
                   document.getElementById("cell-2").classList.add("invisible");
                   document.getElementById("cell-1").classList.remove("invisible");
                   document.getElementById("cell-1").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowLeft />
@@ -78,6 +66,7 @@ export default function Team() {
                   document.getElementById("cell-2").classList.add("invisible");
                   document.getElementById("cell-3").classList.remove("invisible");
                   document.getElementById("cell-3").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowRight />
@@ -90,6 +79,7 @@ export default function Team() {
                   document.getElementById("cell-3").classList.add("invisible");
                   document.getElementById("cell-2").classList.remove("invisible");
                   document.getElementById("cell-2").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowLeft />
@@ -101,12 +91,12 @@ export default function Team() {
                   document.getElementById("cell-3").classList.add("invisible");
                   document.getElementById("cell-1").classList.remove("invisible");
                   document.getElementById("cell-1").classList.add("opacity-trans");
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowRight />
               </button>
             </div>
-            {/* </Flickity> */}
           </div>
         </div>
       </div>

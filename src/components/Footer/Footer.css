@@ -70,7 +70,7 @@
 .contact-info a {
     text-decoration: none;
     color: white;   
-    transition: 1s;
+    transition: 0.4s;
 }
 .contact-info a:hover {
 
@@ -108,6 +108,12 @@
     animation: spin 12s infinite linear;
 }
 
+.center{
+    display: flex;
+    justify-content: center!important;
+    align-items: center !important;
+}
+
 @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -126,6 +132,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
+}
+
+.contact-info span{
+    color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -140,5 +151,9 @@
 
     #footer {
         height: max-content;
+    }
+
+    .logo-spin{
+        scale: 0.5;
     }
 }
