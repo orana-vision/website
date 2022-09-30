@@ -192,6 +192,21 @@
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5312260646446079) 59%, rgba(0,0,0,0) 100%);
 }
 
+.form-container-animation {
+    animation: form-container-anim 2s;
+}
+
+@keyframes form-container-anim {
+    0% {
+        opacity: 0.3;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 100%;

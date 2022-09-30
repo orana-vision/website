@@ -64,6 +64,13 @@
     clip-path: circle(25% at 50% 50%);
 }
 
+.member-name {
+    position: relative;
+    bottom: 0;
+    color: white;
+    z-index: 100000;
+}
+
 @media (max-width: 1200px) {
     .gallery {
         flex-direction: column;
