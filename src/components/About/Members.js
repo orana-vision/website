@@ -71,7 +71,9 @@ const MembersItem = ({ src }) => {
                         style={{
                             backgroundImage: `url(${src})`,
                             clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
-                        }}></div>
+                        }}>
+                        <span className="member-name">Iwannhs</span>
+                    </div>
                 </div>
             </Link>
         </div>
