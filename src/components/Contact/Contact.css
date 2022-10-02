@@ -91,8 +91,7 @@
 
 .neomorphism-contact {
     border-radius: 0.4rem;
-    background: #ffffff8f;
-    
+    background: #ffffff8f; 
     border: 0px;
     padding-left: 50px;
     padding-right: 50px;
@@ -102,7 +101,9 @@
     color: rgb(0, 0, 0);
     width: 100%;
     justify-content: flex-end;
+    cursor: pointer;
 }
+
 
 .button-container {
     width: 70%;

@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import React, { useRef } from "react";
 import "./About.css";
 import websiteSvg from "../../assets/website.svg";
 import mobileSvg from "../../assets/mobile.svg";
 import eshopSvg from "../../assets/eshop.svg";
 import Members from "./Members";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 import useIsInViewport from "../../utils/inViewport.js";
 
@@ -40,9 +41,10 @@ const About = () => {
             }}
           >
             <div className="flip-card-inner" ref={inner1}>
-              <div className="flip-card-front">
+              <div className="flip-card-front" title="Κάντε κλικ για λεπτομέρειες">
                 <img className="mobile-svg" src={mobileSvg} alt="mobile-apps" />
                 <div className="text">Κατασκευάζουμε mobile εφαρμογές που θα απογείώσουν την επιχείρηση σας</div>
+                <AiOutlineArrowDown className="text" />
               </div>
               <div className="text details flip-card-back" ref={back}>
                 Θέλετε η επιχείρηση σας να είναι εύκολα προσβάσιμη από το κινητό; Μετατρέπουμε την ιστοσελίδα ή το e-shop σας σε mobile app που μπορούν να εγκαταστήσουν στα κινητά τους οι πελάτες σας!
@@ -60,9 +62,10 @@ const About = () => {
             }}
           >
             <div className="flip-card-inner" ref={inner2}>
-              <div className="flip-card-front">
+              <div className="flip-card-front" title="Κάντε κλικ για λεπτομέρειες">
                 <img className="svg-icon" src={websiteSvg} alt="websites" />
                 <div className="text">Δημιουργούμε την ιστοσελίδα που θα σας κάνει να ξεχωρίσετε από τους υπόλοιπους</div>
+                <AiOutlineArrowDown className="text" />
               </div>
               <div className="text details flip-card-back">
                 Η ιστοσελίδα δίνει κύρος στην επιχείρηση σας και εμπνέει εμπιστοσύνη στους πελάτες. Είναι αυτό που θα σας κάνει να ξεχωρίσετε από τους υπόλοιπους και να γίνετε η πρώτη επιλογή.
@@ -80,9 +83,10 @@ const About = () => {
             }}
           >
             <div className="flip-card-inner" ref={inner3}>
-              <div className="flip-card-front">
+              <div className="flip-card-front" title="Κάντε κλικ για λεπτομέρειες">
                 <img className="svg-icon" src={eshopSvg} alt="eshops" />
                 <div className="text">Κατασκευάζουμε το δικό σας e-shop ώστε η επιχείρηση σας να λειτουργεί 24 ώρες το 24ωρο</div>
+                <AiOutlineArrowDown className="text" />
               </div>
               <div className="text details flip-card-back">
                 Θέλετε η επιχείρηση σας να είναι εύκολα προσβάσιμη από το κινητό; Μετατρέπουμε την ιστοσελίδα ή το e-shop σας σε mobile app που μπορούν να εγκαταστήσουν στα κινητά τους οι πελάτες σας!
