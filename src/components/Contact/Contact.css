@@ -23,6 +23,8 @@
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-container {
@@ -187,7 +189,7 @@
     padding: 0;
     margin: 0;
     height: 5rem;
-    width: 100%;
+    width: vw;
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5312260646446079) 59%, rgba(0,0,0,0) 100%);
 }
