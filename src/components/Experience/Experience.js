@@ -46,7 +46,7 @@ const Experience = ({ language }) => {
                             <p>{translate(language).experience.answer_5}</p>
                         </Panel>
                         <Panel header={translate(language).experience.question_6} key="6" className="panel">
-                            <p>{translate(language).experience.answer_7}</p>
+                            <p>{translate(language).experience.answer_6}</p>
                         </Panel>
                     </Collapse>
                 </div>
@@ -79,7 +79,7 @@ const Experience = ({ language }) => {
                         <Timeline.Item
                             label={translate(language).experience.timeline_4_label}
                             className="timeline-item">
-                            {translate(language).experience.timeline_5_desc}
+                            {translate(language).experience.timeline_4_desc}
                         </Timeline.Item>
                     </Timeline>
                 </div>
