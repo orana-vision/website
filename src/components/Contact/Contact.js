@@ -64,28 +64,6 @@ const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className="messagebox-container">
-                    <textarea
-                        className="form-message"
-                        type="textarea"
-                        name="Message"
-                        id="message"
-                        placeholder="Γράψτε το μήνυμα σας"
-                    />
-                </div>
-                <div className="button-container">
-                    {/* <button className="neomorphism-contact" type="submit" value="Send"> */}
-                    <input className="neomorphism-contact" type="submit" value="Αποστολή" />
-                    {/* </button> */}
-                </div>
-                <div className="contact-else">
-                    <div className="title">Θα χαρούμε να σας ακούσουμε!</div>
-                    <div className="paragraph">
-                        “Μαζί οποιαδήποτε ιδέα για την επιχείρηση σας, θα γίνει πραγματικότητα.”
-                    </div>
-                    <div className="signature">- Orana</div>
-                </div>
-
                 <div className="gradient"></div>
             </div>
         </section>

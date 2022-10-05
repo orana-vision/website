@@ -7,6 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FiInfo } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import translate from "../../utils/translations";
 
 const Nav = ({ setLanguage, language }) => {
     const [clicked, setClicked] = useState(false);
@@ -35,19 +36,6 @@ const Nav = ({ setLanguage, language }) => {
             document.getElementById("nav").style.width = "25%";
         }
     }
-    const [x, setX] = useState(0);
-    function myFunction() {
-        if (x === 0) {
-            document.getElementById("dropdown").style.display = "none";
-            setX(1);
-            console.log(x);
-        } else {
-            document.getElementById("dropdown").style.display = "block";
-            setX(0);
-            console.log(x);
-        }
-        console.log(x);
-    }
 
     const [changeToLang, setChangeToLang] = useState("English");
     const handleLanguage = () => {
@@ -65,14 +53,13 @@ const Nav = ({ setLanguage, language }) => {
         <nav id="nav" className={scroll ? "nav-test" : "nav-modern"}>
             {scroll ? (
                 <>
-                    <a href="#header">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">FAQ</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#header">{translate(language).nav.home}</a>
+                    <a href="#about">{translate(language).nav.about}</a>
+                    <a href="#experience">{translate(language).nav.faq}</a>
+                    <a href="#contact">{translate(language).nav.contact}</a>
                     <button className="button-language" onClick={handleLanguage}>
                         {changeToLang}
                     </button>
-
                     <div className="selector" id="selector">
                         <button
                             className="selector-button"
@@ -87,23 +74,22 @@ const Nav = ({ setLanguage, language }) => {
                             }}>
                             {clicked ? <AiOutlineClose /> : <FaBars />}
                         </button>
-
                         <ul id="dropdown">
                             <li>
-                                <a href="#header">Home</a>
+                                <a href="#header">{translate(language).nav.home}</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">{translate(language).nav.about}</a>
                             </li>
                             <li>
-                                <a href="#experience">FAQ</a>
+                                <a href="#experience">{translate(language).nav.faq}</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">{translate(language).nav.contact}</a>
                             </li>
-                            <li>
-                                <a href="#footer">Info</a>
-                            </li>
+                            <button className="button-language" onClick={handleLanguage}>
+                                {changeToLang}
+                            </button>
                         </ul>
                     </div>
                 </>
@@ -140,20 +126,20 @@ const Nav = ({ setLanguage, language }) => {
                         </button>
                         <ul id="dropdown">
                             <li>
-                                <a href="#header">Home</a>
+                                <a href="#header">{translate(language).nav.home}</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">{translate(language).nav.about}</a>
                             </li>
                             <li>
-                                <a href="#experience">FAQ</a>
+                                <a href="#experience">{translate(language).nav.faq}</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">{translate(language).nav.contact}</a>
                             </li>
-                            <li>
-                                <a href="#footer">Info</a>
-                            </li>
+                            <button className="button-language" onClick={handleLanguage}>
+                                {changeToLang}
+                            </button>
                         </ul>
                     </div>
                 </>
