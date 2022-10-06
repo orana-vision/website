@@ -21,7 +21,9 @@
     transition: 1s
 }
 
-
+nav-modern a{
+    width: 100%;
+}
 nav a {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -55,6 +57,9 @@ nav a {
     .nav-modern a:not(:last-child) {
         display: none;
     }
+    #language-main-button{
+        display: none;
+    }
     /* .nav-test {
             justify-content: end;
         } */
@@ -69,6 +74,10 @@ nav a {
     
     #selector {
         display: flex;
+    }
+
+    .nav-modern{
+        width: fit-content!important;
     }
 }
 

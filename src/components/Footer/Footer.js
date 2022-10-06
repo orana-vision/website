@@ -3,11 +3,11 @@ import { RiContactsFill } from "react-icons/ri";
 import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { HiMenu } from "react-icons/hi";
-
 import LOGO from "../../assets/orana-logo copy.png";
-
 import "./Footer.css";
-const Footer = () => {
+import translate from "../../utils/translations";
+
+const Footer = ({ language }) => {
     const phone_numbers = ["694 693 0146", "694 695 8343", "694 798 1537"];
 
     return (
@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="footer-childs">
                     <div className="contact-icon">
                         <p className="section-title">
-                            <div>Contact Us!</div>
+                            <div>{translate(language).footer.section_contact_title}</div>
                             <RiContactsFill />
                         </p>
                     </div>
@@ -47,20 +47,20 @@ const Footer = () => {
                 <div className="footer-childs">
                     <p className="section-title">
                         <HiMenu />
-                        <div> Navigate </div>
+                        <div> {translate(language).footer.section_navigate_title} </div>
                     </p>
                     <div className="contact-info">
                         <span>
-                            <a href="/">Home</a>
+                            <a href="/">{translate(language).footer.home}</a>
                         </span>
                         <span>
-                            <a href="/#about">About</a>
+                            <a href="/#about">{translate(language).footer.about}</a>
                         </span>
                         <span>
-                            <a href="/#experience">Experience</a>
+                            <a href="/#experience">{translate(language).footer.faq}</a>
                         </span>
                         <span>
-                            <a href="/#contact">Contact</a>
+                            <a href="/#contact">{translate(language).footer.contact}</a>
                         </span>
                     </div>
                 </div>

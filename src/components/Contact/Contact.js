@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import useIsInViewport from "../../utils/inViewport";
-// import "bootstrap/dist/css/bootstrap.css";
 import "./Contact.css";
+import translate from "../../utils/translations";
 
-const ContactForm = () => {
+const ContactForm = ({ language }) => {
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
         setTimeout(() => {
@@ -36,7 +36,7 @@ const ContactForm = () => {
                                         <option value="Website">Website</option>
                                         <option value="E-shop">E-shop</option>
                                         <option value="Mobile App">Mobile App</option>
-                                        <option value="Custom">Άλλο</option>
+                                        <option value="Custom">{translate(language).contact.other}</option>
                                     </select>
                                 </div>
                                 <div className="messagebox-container">
@@ -45,7 +45,7 @@ const ContactForm = () => {
                                         type="textarea"
                                         name="Message"
                                         id="message"
-                                        placeholder="Γράψτε το μήνυμα σας"
+                                        placeholder={translate(language).contact.write_message}
                                     />
                                 </div>
                                 <div className="button-container">
@@ -56,10 +56,8 @@ const ContactForm = () => {
                             </form>
                         </div>
                         <div className="contact-else">
-                            <div className="title">Θα χαρούμε να σας ακούσουμε!</div>
-                            <div className="paragraph">
-                                “Μαζί οποιαδήποτε ιδέα για την επιχείρηση σας, θα γίνει πραγματικότητα.”
-                            </div>
+                            <div className="title">{translate(language).contact.wish}</div>
+                            <div className="paragraph">{translate(language).contact.orana_quote}</div>
                             <div className="signature">- Orana</div>
                         </div>
                     </div>
