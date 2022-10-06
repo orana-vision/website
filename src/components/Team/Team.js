@@ -17,8 +17,8 @@ const linkedin_1 = "https://www.linkedin.com/in/ioannis-s-horgos-b5889a21a/";
 const github_1 = "https://github.com/giannishorgos";
 const linkedin_2 = "https://www.linkedin.com/in/ioannis-gkountras-25245723b/";
 const github_2 = "https://github.com/giannisgkountras";
-const linkedin_3 = "https://www.linkedin.com/in/ioannis-gkountras-25245723b/";
-const github_3 = "https://github.com/giannisgkountras";
+const linkedin_3 = "https://www.linkedin.com/in/harrys-kemalidis-35774521a/";
+const github_3 = "https://github.com/Bobotsalos";
 
 export default function Team({ language }) {
   return (
