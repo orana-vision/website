@@ -5,7 +5,7 @@ import "./Gkountras.css";
 import linkedin from "../../assets/linkedin.png";
 import git from "../../assets/github.png";
 
-const Gkountras = ({}) => {
+const Gkountras = () => {
     return (
         <div className="gkountras-container">
             <div className="details">
