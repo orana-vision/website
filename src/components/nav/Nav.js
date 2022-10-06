@@ -4,15 +4,24 @@ import { RiHomeLine } from "react-icons/ri";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
-import { FiInfo } from "react-icons/fi";
+// import { FiInfo } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import translate from "../../utils/translations";
 
 const Nav = ({ setLanguage, language }) => {
     const [clicked, setClicked] = useState(false);
-
     const [scroll, setScroll] = useState(true);
+    const [changeToLang, setChangeToLang] = useState("English");
+
+    // const [displayLang, setDisplayLang] = useState("English");
+    // let greekInUse = false;
+
+    // useEffect(() => {
+    //     setDisplayLang(greekInUse ? "Ελληνικά" : "English");
+    //     greekInUse = !greekInUse;
+    // }, [changeToLang]);
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setScroll(window.scrollY < 500);
@@ -37,13 +46,20 @@ const Nav = ({ setLanguage, language }) => {
         }
     }
 
-    const [changeToLang, setChangeToLang] = useState("English");
+    // useEffect(() => {
+    //     if (language === "en") {
+    //     } else if (language === "gr") {
+    //     }
+    // }, [language]);
+
     const handleLanguage = () => {
         // going to translate in greek
         if (language === "en") {
+            // setChangeToLang("English");
             setChangeToLang("English");
             setLanguage("gr");
         } else if (language === "gr") {
+            // setChangeToLang("Ελληνικά");
             setChangeToLang("Ελληνικά");
             setLanguage("en");
         }
@@ -57,9 +73,12 @@ const Nav = ({ setLanguage, language }) => {
                     <a href="#about">{translate(language).nav.about}</a>
                     <a href="#experience">{translate(language).nav.faq}</a>
                     <a href="#contact">{translate(language).nav.contact}</a>
+
                     <button className="button-language" onClick={handleLanguage}>
                         {changeToLang}
+                        {/* {displayLang} */}
                     </button>
+
                     <div className="selector" id="selector">
                         <button
                             className="selector-button"
@@ -87,9 +106,11 @@ const Nav = ({ setLanguage, language }) => {
                             <li>
                                 <a href="#contact">{translate(language).nav.contact}</a>
                             </li>
-                            <button className="button-language" onClick={handleLanguage}>
-                                {changeToLang}
-                            </button>
+                            <li>
+                                <button className="button-language" onClick={handleLanguage}>
+                                    {changeToLang}
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </>
@@ -107,9 +128,12 @@ const Nav = ({ setLanguage, language }) => {
                     <a href="#contact">
                         <HiOutlineMail />
                     </a>
-                    <a href="#footer">
-                        <FiInfo />
-                    </a>
+
+                    <button className="button-language" onClick={handleLanguage}>
+                        {changeToLang}
+                    </button>
+                    {/* <FiInfo /> */}
+
                     <div className="selector" id="selector">
                         <button
                             className="selector-button"
@@ -137,9 +161,11 @@ const Nav = ({ setLanguage, language }) => {
                             <li>
                                 <a href="#contact">{translate(language).nav.contact}</a>
                             </li>
-                            <button className="button-language" onClick={handleLanguage}>
-                                {changeToLang}
-                            </button>
+                            <li>
+                                <button className="button-language" onClick={handleLanguage}>
+                                    {changeToLang}
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </>
