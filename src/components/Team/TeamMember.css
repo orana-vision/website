@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  box-sizing: border-box
+}
+.gkountras-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+
+}
+
+.img-hover-zoom {
+  width: 100%;
+  height: 100%;
+  /* [1.1] Set it as per your need */
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+
+  /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom--quick-zoom img {
+  transform-origin: 50% 50%;
+  transition: transform 0.5s, visibility 0.5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover img {
+  transform: scale(1.02);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+  margin-right: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  font-size: 50px;
+  font-family: 'Roboto';
+  color: #fff;
+  font-weight: bolder;
+}
+
+.bio{
+  font-size: 20px;
+  color: #fff; 
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.socials a{
+  margin-left: 1rem ;
+}
+
+.socials a:hover{
+  opacity: 0.5;
+}
+
+.socials-bg{
+  /* background-color: rgba(0, 0, 0, 0.396); */
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.find{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+
+  .gkountras-container{
+    flex-direction: column;
+  
+    padding: 0rem;
+    flex-wrap: wrap;
+    
+  }
+
+  .title{
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+
+ .bio{
+  padding-left: 4rem;
+  padding-right: 4rem;
+ }
+
+}
