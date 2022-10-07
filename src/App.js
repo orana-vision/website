@@ -12,7 +12,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainScreen setLanguage={setLanguage} language={language} />} />
                 <Route path="/team" element={<TeamScreen setLanguage={setLanguage} language={language} />} />
-                <Route path="/thank-you" element={<ThankYouContactScreen />} />
+                <Route path="/thank-you" element={<ThankYouContactScreen language={language} />} />
             </Routes>
         </BrowserRouter>
     );
