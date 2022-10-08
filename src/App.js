@@ -6,16 +6,16 @@ import ThankYouContactScreen from "./Screens/ThankYouContactScreen";
 import { useState } from "react";
 
 function App() {
-    const [language, setLanguage] = useState("en");
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<MainScreen setLanguage={setLanguage} language={language} />} />
-                <Route path="/team" element={<TeamScreen setLanguage={setLanguage} language={language} />} />
-                <Route path="/thank-you" element={<ThankYouContactScreen language={language} />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  const [language, setLanguage] = useState("gr");
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainScreen setLanguage={setLanguage} language={language} />} />
+        <Route path="/team" element={<TeamScreen setLanguage={setLanguage} language={language} />} />
+        <Route path="/thank-you" element={<ThankYouContactScreen language={language} />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
