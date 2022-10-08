@@ -22,7 +22,7 @@ const Experience = ({ language }) => {
   return (
     <section id="experience">
       <div ref={faqTxtRef} className="flex-experience container">
-        <span className={useIsInViewport(faqTxtRef) ? "faq-txt-animation titles" : "titles"}>Συχνές ερωτήσεις</span>
+        <span className={useIsInViewport(faqTxtRef) ? "faq-txt-animation titles" : "titles"}>{translate(language).experience.faq}</span>
         <div ref={faqRef} className="faq-container">
           <Collapse defaultActiveKey={["1"]} onChange={onChange} className={useIsInViewport(faqRef) ? "collapse faq-animation" : "collapse"}>
             <Panel header={translate(language).experience.question_1} key="1" className="panel">

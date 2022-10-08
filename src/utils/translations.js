@@ -22,6 +22,7 @@ const translations = {
       meet_out_team: "Meet our team",
     },
     experience: {
+      faq: "Frequently asked questions",
       question_1: "Why do I need a website?",
       question_2: "How much will it cost?",
       question_3: "How long until my website is ready?",
@@ -60,6 +61,7 @@ const translations = {
       about: "About",
       faq: "FAQ",
       contact: "Contact",
+      team: "Our Team",
     },
     team_member: {
       find_me: "Find me on",
@@ -67,10 +69,16 @@ const translations = {
       name_2: "Ioannis Gkountras",
       name_3: "Xaris Kemalidis",
       bio_1:
-        "Παράλληλα με τις σπουδές μου στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Αριστοτέλειου Πανεπιστημίου Θεσσαλονίκης, ξεκίνησα την επαγγελματική μου καριέρα ως προγραμματιστής και μηχανικός ανάπτυξης λογισμικού στην εταιρία Acta LTD. Όσο οι γνώσεις μου πλήθαιναν, το ενδιαφέρον μου για τον προγραμματισμό μαζί με την όρεξη μου για δημιουργία οδήγησαν σε αυτό που σήμερα βρίσκεται κάτω από το όνομα Orana. Έτσι, μαζί με τους άλλους δύο συνιδρυτές της Orana, αποφασίσαμε να ακολουθήσουμε αυτό το μονοπάτι και να κάνουμε ότι καλύτερο μπορούμε για εσάς και για εμάς.",
+        "I started my professional career as a programer and software engineer at Acta LTD, while studying in the Electrical and Computer Engineering department of Aristotle University of Thessaloniki. As my knowledge was expanding, my drive to program and create lead to what today is called Orana. Together with the two co-founders of Orana we decided to follow this path and do the very best we can for both us and you.",
       bio_2:
-        "Φοιτητής στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Αριστοτέλειου Πανεπιστημίου Θεσσαλονίκης. Αρχικά για εμένα ο προγραμματισμός ήταν ενα ευχάριστο hobby. Με τον καιρό αυτή η ενασχόληση μου με τον προγραμματισμό απέκτησε μεγαλύτερες διαστάσεις. Πλέον ως συνιδρυτής της Orana, ασχολούμαι σε καθημερινή βάση με projects της εταιρείας, ξεπερνώντας πόλλα προβλήματα που προκύπτουν, αλλά και προσθέτοντας μια μοναδική πινελιά, χαρακτηριστική της Orana, που κάνει το κάθε αποτέλεσμα να είναι ξεχωριστό.",
-      bio_3: "Φοιτητής στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Αριστοτέλειου Πανεπιστημίου Θεσσαλονίκης.",
+        "Electrical and Computer Engineering Student at Aristotle University of Thessaloniki. At first, programming was a pleasant hobby for me. As time went by, this hobby got bigger and bigger. Now, as a co-founder of Orana, I contribute to our company's projects daily, overcoming a number of problems that occur, while simultaneously adding beautiful details, distinct to Orana, that make every outcome unique.",
+      bio_3: "Electrical and Computer Engineering Student at Aristotle University of Thessaloniki.",
+    },
+    thank_you: {
+      thank_you_title: "Thank you for contacting us!",
+      thank_you_p: "We will get back to you as soon as posible!",
+      thank_you_meet: "Meet our team",
+      thank_you_back: "Back to Orana",
     },
   },
   gr: {
@@ -98,6 +106,7 @@ const translations = {
       meet_out_team: "Γνωρίστε την ομάδα μας!",
     },
     experience: {
+      faq: "Συχνές ερωτήσεις",
       question_1: "Γιατί χρειάζομαι website;",
       question_2: "Πόσο θα μου κοστίσει;",
       question_3: "Σε πόσο καιρό θα είναι έτοιμο το website μου;",
@@ -136,6 +145,7 @@ const translations = {
       about: "Πληροφορίες",
       faq: "Συχνές Ερωτήσεις",
       contact: "Επικοινωνία",
+      team: "Η ομάδα μας",
     },
     team_member: {
       find_me: "Βρείτε με και εδώ:",
@@ -147,6 +157,12 @@ const translations = {
       bio_2:
         "Φοιτητής στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Αριστοτέλειου Πανεπιστημίου Θεσσαλονίκης. Αρχικά για εμένα ο προγραμματισμός ήταν ενα ευχάριστο hobby. Με τον καιρό αυτή η ενασχόληση μου με τον προγραμματισμό απέκτησε μεγαλύτερες διαστάσεις. Πλέον ως συνιδρυτής της Orana, ασχολούμαι σε καθημερινή βάση με projects της εταιρείας, ξεπερνώντας πόλλα προβλήματα που προκύπτουν, αλλά και προσθέτοντας μια μοναδική πινελιά, χαρακτηριστική της Orana, που κάνει το κάθε αποτέλεσμα να είναι ξεχωριστό.",
       bio_3: "Φοιτητής στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Αριστοτέλειου Πανεπιστημίου Θεσσαλονίκης.",
+    },
+    thank_you: {
+      thank_you_title: "Ευχαριστούμε που επικοινωνήσατε μαζί μας!",
+      thank_you_p: "Θα απαντήσουμε το συντομότερο δυνατό!",
+      thank_you_meet: "Γνωρίστε την ομάδα μας",
+      thank_you_back: "Πίσω στην Orana",
     },
   },
 };
