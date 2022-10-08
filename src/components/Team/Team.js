@@ -1,6 +1,6 @@
 import React from "react";
 import "./Team.css";
-
+import { useLocation } from "react-router-dom";
 import MEImg from "../../assets/me.jpg";
 import HORGOSImg from "../../assets/horgos.jpg";
 import KemalImg from "../../assets/kemalidis.jpg";
@@ -21,6 +21,49 @@ const linkedin_3 = "https://www.linkedin.com/in/harrys-kemalidis-35774521a/";
 const github_3 = "https://github.com/Bobotsalos";
 
 export default function Team({ language, setLanguage }) {
+  const location = useLocation();
+  const members = {
+    gkountras: {
+      find_me: translate(language).team_member.find_me,
+      name: translate(language).team_member.name_2,
+      imgsrc: MEImg,
+      bio: translate(language).team_member.bio_2,
+      linkedin_link: linkedin_2,
+      github_link: github_2,
+    },
+    horgos: {
+      find_me: translate(language).team_member.find_me,
+      name: translate(language).team_member.name_1,
+      imgsrc: HORGOSImg,
+      bio: translate(language).team_member.bio_1,
+      linkedin_link: linkedin_1,
+      github_link: github_1,
+    },
+    xaris: {
+      find_me: translate(language).team_member.find_me,
+      name: translate(language).team_member.name_3,
+      imgsrc: KemalImg,
+      bio: translate(language).team_member.bio_3,
+      linkedin_link: linkedin_3,
+      github_link: github_3,
+    },
+  };
+
+  const i = 0;
+  let memberOrder = [members.gkountras, members.horgos, members.xaris];
+  switch (location.search) {
+    case "?=gkountras":
+      break;
+    case "?=horgos":
+      memberOrder = [members.horgos, members.gkountras, members.xaris];
+      break;
+    case "?=kemalidis":
+      memberOrder = [members.xaris, members.horgos, members.gkountras];
+      break;
+    default:
+      break;
+  }
+  console.log(memberOrder[2]);
   return (
     <>
       <div className="top">
@@ -51,14 +94,7 @@ export default function Team({ language, setLanguage }) {
                 <FiArrowLeft />
               </button>
               {/* <Gkountras /> */}
-              <TeamMember
-                find_me={translate(language).team_member.find_me}
-                name={translate(language).team_member.name_2}
-                imgsrc={MEImg}
-                bio={translate(language).team_member.bio_2}
-                linkedin_link={linkedin_2}
-                github_link={github_2}
-              />
+              <TeamMember member={memberOrder[0]} />
               <button
                 className="next"
                 onClick={() => {
@@ -83,15 +119,8 @@ export default function Team({ language, setLanguage }) {
               >
                 <FiArrowLeft />
               </button>
-              {/* <Seba /> */}
-              <TeamMember
-                find_me={translate(language).team_member.find_me}
-                name={translate(language).team_member.name_1}
-                imgsrc={HORGOSImg}
-                bio={translate(language).team_member.bio_1}
-                linkedin_link={linkedin_1}
-                github_link={github_1}
-              />
+
+              <TeamMember member={memberOrder[1]} />
               <button
                 className="next"
                 onClick={() => {
@@ -116,15 +145,8 @@ export default function Team({ language, setLanguage }) {
               >
                 <FiArrowLeft />
               </button>
-              {/* <Kemal /> */}
-              <TeamMember
-                find_me={translate(language).team_member.find_me}
-                name={translate(language).team_member.name_3}
-                imgsrc={KemalImg}
-                bio={translate(language).team_member.bio_3}
-                linkedin_link={linkedin_3}
-                github_link={github_3}
-              />
+
+              <TeamMember member={memberOrder[2]} />
               <button
                 className="next"
                 onClick={() => {

@@ -16,7 +16,7 @@ const translations = {
       mobile_card_back: "Do you want your business to be easily accessible from mobile phones? We turn your website or e-shop into a mobile app that your customers can install on their mobiles!",
       eshop_card_front: "We build your own e-shop so that your business operates 24 hours a day",
       eshop_card_back:
-        "Your customers can make their purchases from the confort of their home, any time of the day. In the same time, your business expands its borders since it becomes accessible worldwide!",
+        "Your customers can make their purchases from the comfort of their home, any time of the day. At the same time, your business expands its borders since it becomes accessible worldwide!",
       website_card_front: "We create the website that will make you stand out from the rest",
       website_card_back: "A website adds prestige to your company and inspires trust to your customers. It is one of the main things that makes you stand out and become the first choice.",
       meet_out_team: "Meet our team",
@@ -30,18 +30,19 @@ const translations = {
       question_6: "I need something more specific for my business. Can you help me?",
       answer_1: "A website brings your customers closer to your business by showcasing your excellent work.",
       answer_2: "We offer affordable solutions for your needs. Do not hesitate to contact us so we can discuss your case thoroughly!",
-      answer_3: "It depends on you! We present our suggestion to you in 3 weeks and after receiving your feedback we move forward!",
+      answer_3: "We present our suggestion to you in 3 weeks and after receiving your feedback we move forward!",
       answer_4: "We help you upgrade your old website and tranform it to a modern one!",
       answer_5:
         "Our team has big experience on web development and will help you reach a new milestone with your business! Our desire for high quality results combined with ORANA's modern design, will form the perfect internet picture of your business!",
       answer_6: "Contact us so we can discuss in detail and offer you exactly what you need!",
+      timeline_title: "The path with ORANA",
       timeline_1_label: "Today",
       timeline_2_label: "Tommorow",
       timeline_3_label: "In three weeks",
       timeline_4_label: "Finaly",
       timeline_1_desc: "Contact us.",
       timeline_2_desc: "We discuss your needs in detail.",
-      timeline_3_desc: "We present you the product we built especially for you.",
+      timeline_3_desc: "We present to you the product we built especially for you.",
       timeline_4_desc: "We make any necessary changes in order to personalise it to your needs.",
     },
     contact: {
@@ -110,6 +111,7 @@ const translations = {
       answer_5:
         "Η ομάδα μας έχει μεγάλη εμπειρία στον χώρο και θα σας βοηθήσει να φτάσετε την επιχείρηση σας ένα βήμα παραπέρα! Η όρεξη για ποιοτικό αποτέλεσμα σε συνδυασμό με το σύγχρονο σχεδιασμό που σας προσφέρει η Orana, θα αποτελέσουν την ιδανική διαδικτυακή βιτρίνα σας!",
       answer_6: "Επικοινωνήστε μαζί μας ώστε να συζητήσουμε αναλυτικά και να σας προσφέρουμε ακριβώς αυτό που ζητάτε!",
+      timeline_title: "Η πορεία με την ORANA",
       timeline_1_label: "Σήμερα",
       timeline_2_label: "Αύριο",
       timeline_3_label: "Σε τρείς εβδομάδες",
