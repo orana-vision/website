@@ -1,15 +1,16 @@
 const translations = {
-  en: {
-    nav: {
-      home: "Home",
-      about: "About",
-      faq: "FAQ",
-      contact: "Contact",
-    },
-    header: {
-      faq: "FAQ",
-      contact: "Let's talk",
-    },
+    en: {
+        nav: {
+            home: "Home",
+            about: "About",
+            faq: "FAQ",
+            contact: "Contact",
+        },
+        header: {
+            faq: "FAQ",
+            contact: "Let's talk",
+        },
+        
     about: {
       about_title: "What do we offer",
       mobile_card_front: "We build mobile applications that will make your business take off!",
@@ -165,9 +166,10 @@ const translations = {
       thank_you_back: "Πίσω στην Orana",
     },
   },
+
 };
 
 export default function translate(language) {
-  if (language === "en") return translations.en;
-  else if (language === "gr") return translations.gr;
+    if (language === "en") return translations.en;
+    else if (language === "gr") return translations.gr;
 }

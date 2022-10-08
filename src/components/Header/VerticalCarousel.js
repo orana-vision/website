@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { height } from "@mui/system";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./VerticalCarousel.css";
 
 const VerticalCarousel = () => {
     const [selectedIndex, setSelectedIndex] = useState({ index: 0, item: 1, angle: 0 });
+    const refCell = useRef();
+    const [cellHeight, setCellHeight] = useState(0);
+
+    useLayoutEffect(() => {
+        setCellHeight(refCell.current.clientHeight);
+    }, []);
 
     let cellCount = 3;
-    let cellSize = 120;
+    let cellSize = 60;
     const theta = 360 / cellCount;
     const radius = Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount));
 
@@ -31,13 +38,19 @@ const VerticalCarousel = () => {
             <div
                 className="carousel"
                 style={{ transform: `translateZ(${-radius}px) rotateX(${selectedIndex.angle}deg)` }}>
-                <div className={selectedIndex.item === 1 ? "carousel__cell cell_selected" : "carousel__cell"}>
+                <div
+                    ref={refCell}
+                    className={selectedIndex.item === 1 ? "carousel__cell cell_selected" : "carousel__cell"}>
                     E-shops
                 </div>
-                <div className={selectedIndex.item === 2 ? "carousel__cell cell_selected" : "carousel__cell"}>
+                <div
+                    ref={refCell}
+                    className={selectedIndex.item === 2 ? "carousel__cell cell_selected" : "carousel__cell"}>
                     Websites
                 </div>
-                <div className={selectedIndex.item === 3 ? "carousel__cell cell_selected" : "carousel__cell"}>
+                <div
+                    ref={refCell}
+                    className={selectedIndex.item === 3 ? "carousel__cell cell_selected" : "carousel__cell"}>
                     Mobile Apps
                 </div>
             </div>
