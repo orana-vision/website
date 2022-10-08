@@ -22,7 +22,7 @@ const About = ({ language }) => {
 
     return (
         <section className="container" id="about">
-            <div className="flex-about container    ">
+            <div className="flex-about container">
                 <div ref={aboutTxtRef} className="about-text">
                     <span className={useIsInViewport(aboutTxtRef) ? "about-txt-animation" : ""}>
                         {translate(language).about.about_title}

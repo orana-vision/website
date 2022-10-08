@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-
 
 #contact {
     display: flex;
@@ -238,5 +236,9 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.531226064644607
 
     textarea{
         margin: 1rem 0;
+    }
+
+    #contact {
+        height: 100%;
     }
 }

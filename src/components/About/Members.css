@@ -75,7 +75,7 @@
 @media (max-width: 1200px) {
     .gallery {
         flex-direction: column;
-        height: 800px;
+        height: 1200px;
     }
 
 }

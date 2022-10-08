@@ -25,7 +25,9 @@ const Footer = ({ language }) => {
                             <BsFillTelephoneFill className="footer-icons" />
                             <div className="telephons">
                                 {phone_numbers.map((phone_number) => (
-                                    <a href={`tel:${phone_number}`}>{phone_number}</a>
+                                    <a key={phone_number} href={`tel:${phone_number}`}>
+                                        {phone_number}
+                                    </a>
                                 ))}
                             </div>
                         </span>
