@@ -1,7 +1,9 @@
 import React from "react";
 import "./ThankYou.css";
 import OranaLogo from "../../assets/orana-logo.png";
-export default function ThankYou() {
+import translate from "../../utils/translations";
+
+export default function ThankYou({ language }) {
   return (
     <>
       <div className="top">
@@ -10,14 +12,14 @@ export default function ThankYou() {
         </a>
       </div>
       <div className="thankyou-container">
-        <h1>Ευχαριστούμε που επικοινωνήσατε μαζί μας!</h1>
-        <p>Θα απαντήσουμε το συντομότερο δυνατό!</p>
+        <h1>{translate(language).thank_you.thank_you_title}</h1>
+        <p>{translate(language).thank_you.thank_you_p}</p>
         <div className="thankyou-buttons-container">
           <button className="button-28">
-            <a href="/team">Γνωρίστε την ομάδα μας</a>
+            <a href="/team">{translate(language).thank_you.thank_you_meet}</a>
           </button>
           <button className="button-28">
-            <a href="/">Πίσω στην Orana</a>
+            <a href="/">{translate(language).thank_you.thank_you_back}</a>
           </button>
         </div>
       </div>

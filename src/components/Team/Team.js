@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Team.css";
 import { useLocation } from "react-router-dom";
 import MEImg from "../../assets/me.jpg";
@@ -21,6 +21,7 @@ const linkedin_3 = "https://www.linkedin.com/in/harrys-kemalidis-35774521a/";
 const github_3 = "https://github.com/Bobotsalos";
 
 export default function Team({ language, setLanguage }) {
+  const [changeToLang, setChangeToLang] = useState({ activeLang: language === "en" ? "English" : "Ελληνικά", inactiveLang: language === "en" ? "Ελληνικά" : "English" });
   const location = useLocation();
   const members = {
     gkountras: {
@@ -49,7 +50,19 @@ export default function Team({ language, setLanguage }) {
     },
   };
 
-  const i = 0;
+  const handleLanguage = () => {
+    // going to translate in greek
+    if (language === "en") {
+      // setChangeToLang("English");
+      // setChangeToLang({ activeLang: "Ελληνικά", inactiveLang: "English" });
+      setLanguage("gr");
+    } else if (language === "gr") {
+      // setChangeToLang("Ελληνικά");
+      // setChangeToLang({ activeLang: "English", inactiveLang: "Ελληνικά" });
+      setLanguage("en");
+    }
+  };
+
   let memberOrder = [members.gkountras, members.horgos, members.xaris];
   switch (location.search) {
     case "?=gkountras":
@@ -63,20 +76,20 @@ export default function Team({ language, setLanguage }) {
     default:
       break;
   }
-  console.log(memberOrder[2]);
   return (
     <>
       <div className="top">
         <a href="/">
           <img src={OranaLogo} className="top-logo" alt="Orana" height={"45"} />
         </a>
-        {/* <div className="dropdown" id="language-dropdown">
-          <button className="dropbtn">Language/Γλώσσα</button>
-          <div className="dropdown-content" id="dropdown-content">
-            <button onClick={() => setLanguage("gr")}>Ελληνικά</button>
-            <button onClick={() => setLanguage("en")}>English</button>
-          </div>
-        </div> */}
+        <div className="lang-switch">
+          <h1>{changeToLang.activeLang}</h1>
+          <label class="switch">
+            <input type="checkbox" className="checkbox" onClick={handleLanguage} />
+            <span class="slider round"></span>
+          </label>
+          <h1>{changeToLang.inactiveLang}</h1>
+        </div>
       </div>
       <div className="carousel-container-big">
         <div className="carousel-container">
