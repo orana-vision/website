@@ -47,7 +47,6 @@ const MembersItem = ({ src, memberLinks }) => {
     });
   }, []);
   const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
-  console.log(memberLinks);
   return (
     <div
       className="gallery-item-wrapper"
@@ -84,9 +83,7 @@ const MembersItem = ({ src, memberLinks }) => {
                     backgroundImage: `url(${src})`,
                     clipPath: `circle(${clipMaskRadius}% at ${clipMask.x}% ${clipMask.y}%)`,
                   }}
-                >
-                  <span className="member-name">Iwannhs</span>
-                </div>
+                ></div>
               </div>
             </Link>
           </div>
