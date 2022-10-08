@@ -62,6 +62,9 @@ nav a {
     text-decoration: none;
     padding: 5px;
 }
+#language-main-button{
+    font-size: 21px!important;
+}
 @media screen and (max-width: 1200px) {
     .nav-modern a:not(:last-child) {
         display: none;
@@ -132,7 +135,6 @@ li{
 .dropbtn {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
     text-decoration: none;
     padding: 5px;
     border: none;

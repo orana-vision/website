@@ -149,8 +149,11 @@
     font-size: 1rem;
     margin-top: 1.5rem;
     color: black;
-    margin-top:3rem
+    margin-top:3rem;
+    background-color: #e8e4e4;
 }
+
+
 
 .text-websites {
     font-size: 1rem;
@@ -310,10 +313,21 @@ button {
     .services-container {
         flex-direction: column;
         gap: 1rem;
+        width: 95%;
+    }
+    .members-container {
+        width: 95%;
     }
     .service{
-        margin: 0;
-        
+        margin: 0;   
+    }
+
+    .about-text {
+        font-size: 95% ;
+    }
+
+    .meet-team-text {
+        font-size: 95%;
     }
 }
 
@@ -321,6 +335,7 @@ button {
 
 .flip-card {
     perspective: 1000px;
+    
 }
 
 .flip-card-inner {
@@ -334,6 +349,8 @@ button {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden
 }
 
 /* .flip-card:hover .flip-card-inner {
@@ -354,9 +371,11 @@ button {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    
 }
 
 .flip-card-back {
     
     transform: rotateY(180deg);
 }
+
