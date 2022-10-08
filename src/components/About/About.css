@@ -318,6 +318,14 @@ button {
     .service{
         margin: 0;   
     }
+
+    .about-text {
+        font-size: 95% ;
+    }
+
+    .meet-team-text {
+        font-size: 95%;
+    }
 }
 
 
