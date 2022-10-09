@@ -12,14 +12,14 @@ const translations = {
     },
 
     about: {
-      about_title: "What do we offer",
-      mobile_card_front: "We build mobile applications that will make your business take off!",
+      about_title: "What we offer",
+      mobile_card_front: "We build mobile applications that help your business take off!",
       mobile_card_back: "Do you want your business to be easily accessible from mobile phones? We turn your website or e-shop into a mobile app that your customers can install on their mobiles!",
       eshop_card_front: "We build your own e-shop so that your business operates 24 hours a day",
       eshop_card_back:
         "Your customers can make their purchases from the comfort of their home, any time of the day. At the same time, your business expands its borders since it becomes accessible worldwide!",
       website_card_front: "We create the website that will make you stand out from the rest",
-      website_card_back: "A website adds prestige to your company and inspires trust to your customers. It is one of the main things that makes you stand out and become the first choice.",
+      website_card_back: "A website adds prestige to your company and inspires trust to your customers. It is one of the main things that make you stand out and become the first choice.",
       meet_out_team: "Meet our team",
     },
     experience: {
@@ -35,13 +35,13 @@ const translations = {
       answer_3: "We present our suggestion to you in 3 weeks and after receiving your feedback we move forward!",
       answer_4: "We help you upgrade your old website and tranform it to a modern one!",
       answer_5:
-        "Our team has big experience on web development and will help you reach a new milestone with your business! Our desire for high quality results combined with ORANA's modern design, will form the perfect internet picture of your business!",
+        "Our team has big experience in web development and will help you reach a new milestone with your business! Our desire for high quality results combined with ORANA's modern design, will form the perfect internet image of your business!",
       answer_6: "Contact us so we can discuss in detail and offer you exactly what you need!",
       timeline_title: "The path with ORANA",
       timeline_1_label: "Today",
-      timeline_2_label: "Tommorow",
+      timeline_2_label: "Tomorrow",
       timeline_3_label: "In three weeks",
-      timeline_4_label: "Finaly",
+      timeline_4_label: "Finally",
       timeline_1_desc: "Contact us.",
       timeline_2_desc: "We discuss your needs in detail.",
       timeline_3_desc: "We present to you the product we built especially for you.",
@@ -51,7 +51,7 @@ const translations = {
       other: "Other",
       write_message: "Write your message...",
       wish: "We will be more than glad to talk to you!",
-      orana_quote: "“Together, any idea for your business, becomes a reality.”",
+      orana_quote: "“Together we can transform any idea for your business into reality.”",
       send_button: "Send",
       form_name: "Name",
     },
@@ -70,9 +70,9 @@ const translations = {
       name_2: "Ioannis Gkountras",
       name_3: "Xaris Kemalidis",
       bio_1:
-        "I started my professional career as a programer and software engineer at Acta LTD, while studying in the Electrical and Computer Engineering department of Aristotle University of Thessaloniki. As my knowledge was expanding, my drive to program and create lead to what today is called Orana. Together with the two co-founders of Orana we decided to follow this path and do the very best we can for both us and you.",
+        "I started my professional career as a programer and software engineer at Acta LTD, while studying in the Electrical and Computer Engineering department of Aristotle University of Thessaloniki. As my knowledge was expanding, my drive to program and create led to what today is called Orana. Together with the two co-founders of Orana we decided to follow this path and do the very best we can for both you and us.",
       bio_2:
-        "Electrical and Computer Engineering Student at Aristotle University of Thessaloniki. At first, programming was a pleasant hobby for me. As time went by, this hobby got bigger and bigger. Now, as a co-founder of Orana, I contribute to our company's projects daily, overcoming a number of problems that occur, while simultaneously adding beautiful details, distinct to Orana, that make every outcome unique.",
+        "Electrical and Computer Engineering Student at Aristotle University of Thessaloniki. At first, programming was a pleasant hobby for me. As time went by, this hobby became more significant. Now, as a co-founder of Orana, I contribute to our company's projects daily, overcoming a number of problems that occur, while simultaneously adding beautiful details, distinct to Orana, that make every outcome unique.",
       bio_3: "Electrical and Computer Engineering Student at Aristotle University of Thessaloniki.",
     },
     thank_you: {
