@@ -66,6 +66,10 @@ const Nav = ({ setLanguage, language }) => {
     }
   };
 
+  const linkClickHideNav = () => {
+    document.getElementById("dropdown").style.display = "none";
+    setClicked(false);
+  };
   return (
     <nav id="nav" className={scroll ? "nav-test" : "nav-modern"}>
       {scroll ? (
@@ -105,16 +109,24 @@ const Nav = ({ setLanguage, language }) => {
             </button>
             <ul id="dropdown">
               <li>
-                <a href="#header">{translate(language).nav.home}</a>
+                <a href="#header" onClick={linkClickHideNav}>
+                  {translate(language).nav.home}
+                </a>
               </li>
               <li>
-                <a href="#about">{translate(language).nav.about}</a>
+                <a href="#about" onClick={linkClickHideNav}>
+                  {translate(language).nav.about}
+                </a>
               </li>
               <li>
-                <a href="#experience">{translate(language).nav.faq}</a>
+                <a href="#experience" onClick={linkClickHideNav}>
+                  {translate(language).nav.faq}
+                </a>
               </li>
               <li>
-                <a href="#contact">{translate(language).nav.contact}</a>
+                <a href="#contact" onClick={linkClickHideNav}>
+                  {translate(language).nav.contact}
+                </a>
               </li>
               <li>
                 <button className="button-language" onClick={handleLanguage}>
@@ -162,16 +174,24 @@ const Nav = ({ setLanguage, language }) => {
             </button>
             <ul id="dropdown">
               <li>
-                <a href="#header">{translate(language).nav.home}</a>
+                <a href="#header" onClick={linkClickHideNav}>
+                  {translate(language).nav.home}
+                </a>
               </li>
               <li>
-                <a href="#about">{translate(language).nav.about}</a>
+                <a href="#about" onClick={linkClickHideNav}>
+                  {translate(language).nav.about}
+                </a>
               </li>
               <li>
-                <a href="#experience">{translate(language).nav.faq}</a>
+                <a href="#experience" onClick={linkClickHideNav}>
+                  {translate(language).nav.faq}
+                </a>
               </li>
               <li>
-                <a href="#contact">{translate(language).nav.contact}</a>
+                <a href="#contact" onClick={linkClickHideNav}>
+                  {translate(language).nav.contact}
+                </a>
               </li>
               <li>
                 <button className="button-language" onClick={handleLanguage}>
