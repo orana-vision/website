@@ -46,7 +46,11 @@ const MembersItem = ({ src, memberLinks }) => {
       });
     });
   }, []);
-  const images = ["../../assets/gkountras.jpg", "../../assets/horgos.jpg", "../../assets/horgos.jpg"];
+  const images = [
+    "../../assets/gkountras.jpg",
+    "../../assets/horgos.jpg",
+    "../../assets/horgos.jpg",
+  ];
   return (
     <div
       className="gallery-item-wrapper"
@@ -61,8 +65,17 @@ const MembersItem = ({ src, memberLinks }) => {
       }}
     >
       <Link to={memberLinks}>
-        <div className={!isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"}>
-          <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
+        <div
+          className={
+            !isInViewPort
+              ? "gallery-animate-start gallery-item"
+              : "gallery-item gallery-animate-end"
+          }
+        >
+          <div
+            className="gallery-item-image sepia"
+            style={{ backgroundImage: `url(${src})` }}
+          ></div>
           <div
             className="gallery-item-image masked"
             style={{
@@ -75,8 +88,17 @@ const MembersItem = ({ src, memberLinks }) => {
             }}
           >
             <Link to={memberLinks}>
-              <div className={!isInViewPort ? "gallery-animate-start gallery-item" : "gallery-item gallery-animate-end"}>
-                <div className="gallery-item-image sepia" style={{ backgroundImage: `url(${src})` }}></div>
+              <div
+                className={
+                  !isInViewPort
+                    ? "gallery-animate-start gallery-item"
+                    : "gallery-item gallery-animate-end"
+                }
+              >
+                <div
+                  className="gallery-item-image sepia"
+                  style={{ backgroundImage: `url(${src})` }}
+                ></div>
                 <div
                   className="gallery-item-image masked"
                   style={{
@@ -99,9 +121,9 @@ const Members = () => {
   const memberDetails = [
     { photo: horgosPhoto, link: "/team?=horgos" },
     { photo: gkountrasPhoto, link: "/team?=gkountras" },
-    { photo: kemalidisPhoto, link: "/team?=kemalidis" },
+    // { photo: kemalidisPhoto, link: "/team?=kemalidis" },
   ];
-  const memberLinks = ["/team?=horgos", "/team?=gkountras", "/team?=kemalidis"];
+  const memberLinks = ["/team?=horgos", "/team?=gkountras"];
   let key = 0;
   return (
     <div className="gallery">
@@ -115,7 +137,13 @@ const Members = () => {
 function useIsInViewport(ref) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
-  const observer = useMemo(() => new IntersectionObserver(([entry]) => setIsIntersecting(entry.isIntersecting)), []);
+  const observer = useMemo(
+    () =>
+      new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting)
+      ),
+    []
+  );
 
   useEffect(() => {
     observer.observe(ref.current);

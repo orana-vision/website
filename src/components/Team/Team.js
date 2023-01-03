@@ -21,7 +21,10 @@ const linkedin_3 = "https://www.linkedin.com/in/harrys-kemalidis-35774521a/";
 const github_3 = "https://github.com/Bobotsalos";
 
 export default function Team({ language, setLanguage }) {
-  const [changeToLang, setChangeToLang] = useState({ activeLang: language === "en" ? "English" : "Ελληνικά", inactiveLang: language === "en" ? "Ελληνικά" : "English" });
+  const [changeToLang, setChangeToLang] = useState({
+    activeLang: language === "en" ? "English" : "Ελληνικά",
+    inactiveLang: language === "en" ? "Ελληνικά" : "English",
+  });
   const location = useLocation();
   const members = {
     gkountras: {
@@ -40,14 +43,14 @@ export default function Team({ language, setLanguage }) {
       linkedin_link: linkedin_1,
       github_link: github_1,
     },
-    xaris: {
-      find_me: translate(language).team_member.find_me,
-      name: translate(language).team_member.name_3,
-      imgsrc: KemalImg,
-      bio: translate(language).team_member.bio_3,
-      linkedin_link: linkedin_3,
-      github_link: github_3,
-    },
+    // xaris: {
+    //   find_me: translate(language).team_member.find_me,
+    //   name: translate(language).team_member.name_3,
+    //   imgsrc: KemalImg,
+    //   bio: translate(language).team_member.bio_3,
+    //   linkedin_link: linkedin_3,
+    //   github_link: github_3,
+    // },
   };
 
   const handleLanguage = () => {
@@ -63,16 +66,16 @@ export default function Team({ language, setLanguage }) {
     }
   };
 
-  let memberOrder = [members.gkountras, members.horgos, members.xaris];
+  let memberOrder = [members.gkountras, members.horgos];
   switch (location.search) {
     case "?=gkountras":
       break;
     case "?=horgos":
-      memberOrder = [members.horgos, members.gkountras, members.xaris];
+      memberOrder = [members.horgos, members.gkountras];
       break;
-    case "?=kemalidis":
-      memberOrder = [members.xaris, members.horgos, members.gkountras];
-      break;
+    // case "?=kemalidis":
+    //   memberOrder = [members.xaris, members.horgos, members.gkountras];
+    //   break;
     default:
       break;
   }
@@ -85,7 +88,11 @@ export default function Team({ language, setLanguage }) {
         <div className="lang-switch">
           <h1>{changeToLang.activeLang}</h1>
           <label class="switch">
-            <input type="checkbox" className="checkbox" onClick={handleLanguage} />
+            <input
+              type="checkbox"
+              className="checkbox"
+              onClick={handleLanguage}
+            />
             <span class="slider round"></span>
           </label>
           <h1>{changeToLang.inactiveLang}</h1>
@@ -99,8 +106,12 @@ export default function Team({ language, setLanguage }) {
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-1").classList.add("invisible");
-                  document.getElementById("cell-3").classList.remove("invisible");
-                  document.getElementById("cell-3").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-2")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-3")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
@@ -112,8 +123,12 @@ export default function Team({ language, setLanguage }) {
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-1").classList.add("invisible");
-                  document.getElementById("cell-2").classList.remove("invisible");
-                  document.getElementById("cell-2").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-2")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-2")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
@@ -125,8 +140,12 @@ export default function Team({ language, setLanguage }) {
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-2").classList.add("invisible");
-                  document.getElementById("cell-1").classList.remove("invisible");
-                  document.getElementById("cell-1").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-1")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-1")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
@@ -138,21 +157,29 @@ export default function Team({ language, setLanguage }) {
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-2").classList.add("invisible");
-                  document.getElementById("cell-3").classList.remove("invisible");
-                  document.getElementById("cell-3").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-1")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-1")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowRight />
               </button>
             </div>
-            <div class="carousel-cell invisible" id="cell-3">
+            {/* <div class="carousel-cell invisible" id="cell-3">
               <button
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-3").classList.add("invisible");
-                  document.getElementById("cell-2").classList.remove("invisible");
-                  document.getElementById("cell-2").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-2")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-2")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
@@ -164,14 +191,18 @@ export default function Team({ language, setLanguage }) {
                 className="next"
                 onClick={() => {
                   document.getElementById("cell-3").classList.add("invisible");
-                  document.getElementById("cell-1").classList.remove("invisible");
-                  document.getElementById("cell-1").classList.add("opacity-trans");
+                  document
+                    .getElementById("cell-1")
+                    .classList.remove("invisible");
+                  document
+                    .getElementById("cell-1")
+                    .classList.add("opacity-trans");
                   window.scrollTo(0, 0);
                 }}
               >
                 <FiArrowRight />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
